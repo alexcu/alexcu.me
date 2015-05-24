@@ -1,0 +1,40 @@
+body > header {
+  @include responsive();
+
+  padding-top: 150px;
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    line-height: 100%;
+  }
+  h1 {
+    font-weight: $light;
+    color: $dark-gray-color;
+    
+    font-size: 5em;
+    letter-spacing: -3px;
+
+    margin-bottom: 5px;
+  }
+  h2 {
+    font-weight: $medium;
+    font-style: italic;
+    color: $medium-blue-color;
+    letter-spacing: -1px;
+  }
+
+  // Mobile
+  @media only screen and (max-width: 768px) {
+    padding-top: 50px;
+    h1, h2 {
+      letter-spacing: -1px;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    h2 {
+      font-size: 1.2em;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+// Font weights
+$thin:    200;
+$light:   300;
+$regular: 400;
+$medium:  500;
+$bold:    600;
+
+// Import Helvetica
+@font-face {
+  src:          url('/fonts/HelveticaNeueThin.ttf');
+  font-family: 'Helvetica Neue';
+  font-style:   normal;
+  font-weight:  $thin;
+}
+
+@font-face {
+  src:          url('/fonts/HelveticaNeueThinItalic.ttf');
+  font-family: 'Helvetica Neue';
+  font-style:   italic;
+  font-weight:  $thin;
+}
+
+@font-face {
+  src:          url('/fonts/HelveticaNeueLight.ttf');
+  font-family: 'Helvetica Neue';
+  font-style:   normal;
+  font-weight:  $light;
+}
+
+@font-face {
+  src:          url('/fonts/HelveticaNeueLightItalic.ttf');
+  font-family: 'Helvetica Neue';
+  font-style:   italic;
+  font-weight:  $light;
+}
+
+@font-face {
+  src:          url('/fonts/HelveticaNeue.ttf');
+  font-family: 'Helvetica Neue';
+  font-style:   normal;
+  font-weight:  $regular;
+}
+
+
+@font-face {
+  src:          url('/fonts/HelveticaNeueItalic.ttf');
+  font-family: 'Helvetica Neue';
+  font-style:   italic;
+  font-weight:  $regular;
+}
+
+@font-face {
+  src:          url('/fonts/HelveticaNeueMedium.ttf');
+  font-family: 'Helvetica Neue';
+  font-style:   normal;
+  font-weight:  $medium;
+}
+
+@font-face {
+  src:          url('/fonts/HelveticaNeueMediumItalic.ttf');
+  font-family: 'Helvetica Neue';
+  font-style:   italic;
+  font-weight:  $medium;
+}
+
+@font-face {
+  src:          url('/fonts/HelveticaNeueBold.ttf');
+  font-family: 'Helvetica Neue';
+  font-style:   normal;
+  font-weight:  $bold;
+}
+
+@font-face {
+  src:          url('/fonts/HelveticaNeueBoldItalic.ttf');
+  font-family: 'Helvetica Neue';
+  font-style:   italic;
+  font-weight:  $bold;
+}
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+$font-stack: 'Helvetica Neue', Helvetica, sans-serif !default;

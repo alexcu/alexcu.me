@@ -1,0 +1,17 @@
+// Compass!
+@import "compass";
+
+// Import all modules
+@import "modules/all";
+
+// Base Font
+$base-font-family:  $font-stack;
+$base-font-weight:  $regular;
+$base-font-size:    62.5%;
+$base-line-height:  1.5;
+
+// Base backgrounds
+$base-background-color: $light-gray-color;
+
+// Headings
+$header-font-weight: $bold;

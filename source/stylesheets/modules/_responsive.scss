@@ -1,0 +1,36 @@
+// Container width sizes
+$responsive-width-mobile: 290px;
+$responsive-width-tablet: 668px;
+$responsive-width-medium: 992px;
+$responsive-width-large : 1200px;
+
+@mixin push-center($width) {
+  $side-width: calc((100% - #{$width}) / 2);
+  padding-left: $side-width;
+  padding-right: $side-width;
+  width: $width;
+}
+
+@mixin responsive() {
+  // SMARTPHONES DEFAULT (<768px)
+  @include push-center($responsive-width-mobile);
+  @include font-size(1.2);
+
+  // TABLET (>=768px)
+  @media only screen and (min-width: 768px) {
+    @include push-center($responsive-width-tablet);    
+    @include font-size(1.3);
+  }
+
+  // MEDIUM (>=992px)
+  @media only screen and (min-width: 992px) {
+    @include push-center($responsive-width-medium);
+    @include font-size(1.6);
+  }
+
+  // LARGE (>=1200px)
+  @media only screen and (min-width: 1200px) {
+    @include push-center($responsive-width-large);
+    @include font-size(1.6);
+  }
+}
