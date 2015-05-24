@@ -2,7 +2,7 @@ body > header {
   @include responsive();
 
   text-shadow: 0 1px 0 #fff;
-  padding-top: 150px;
+  padding-top: 8em;
 
   * {
     margin: 0px;
@@ -12,7 +12,7 @@ body > header {
   h1 {
     font-weight: $light;
     color: $dark-gray-color;
-    
+
     font-size: 5em;
     letter-spacing: -3px;
 
@@ -25,7 +25,7 @@ body > header {
     letter-spacing: -1px;
   }
   ul {
-    margin-top: 60px;
+    margin-top: 3em;
     list-style: none;
     -webkit-padding-start: 0px;
     li {
@@ -36,8 +36,8 @@ body > header {
       border-radius: 10px;
       box-shadow:  0 1px 0 #fff;
     }
-    li:not(:first-child) {
-      margin-left: 1em; 
+    li:not(:last-child) {
+      margin-right: 1em;
     }
     li:hover {
       opacity: 0.8;
@@ -60,7 +60,7 @@ body > header {
 
   // Mobile
   @media only screen and (max-width: 768px) {
-    padding-top: 50px;
+    padding-top: 5em;
     h1, h2 {
       letter-spacing: -1px;
     }
