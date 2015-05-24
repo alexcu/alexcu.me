@@ -34,6 +34,7 @@ body > header {
       height: 3em;
       background-color: $dark-gray-color;
       border-radius: 10px;
+      box-shadow:  0 1px 0 #fff;
     }
     li:not(:first-child) {
       margin-left: 1em; 
