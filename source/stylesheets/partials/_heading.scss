@@ -1,6 +1,7 @@
 body > header {
   @include responsive();
 
+  text-shadow: 0 1px 0 #fff;
   padding-top: 150px;
 
   * {
@@ -22,6 +23,38 @@ body > header {
     font-style: italic;
     color: $medium-blue-color;
     letter-spacing: -1px;
+  }
+  ul {
+    margin-top: 60px;
+    list-style: none;
+    -webkit-padding-start: 0px;
+    li {
+      display: inline-block;
+      width: 3em;
+      height: 3em;
+      background-color: $dark-gray-color;
+      border-radius: 10px;
+    }
+    li:not(:first-child) {
+      margin-left: 1em; 
+    }
+    li:hover {
+      opacity: 0.8;
+    }
+    li a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-position: center;
+      background-size: 65%;
+      background-repeat: no-repeat;
+    }
+    // Logos
+    li.linkedin     a { @include linkedin-logo();     }
+    li.github       a { @include github-logo();       }
+    li.scriptogram  a { @include scriptogram-logo();  }
+    li.twitter      a { @include twitter-logo();      }
+    li.resume       a { @include resume-logo();       }
   }
 
   // Mobile

@@ -1,9 +1,10 @@
 // Modules and Variables
 @import "partials/base";
 
+// Vendor
+@import "vendor/font-awesome";
+@import "vendor/normalise";
+
 // Partials
 @import "partials/body";
 @import "partials/heading";
-
-// Vendor
-@import "vendor/normalise"

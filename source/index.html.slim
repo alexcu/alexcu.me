@@ -1,3 +1,7 @@
 header
   h1 Alex Cummaudo
   h2 Software Engineer. Melbourne, Australia.
+  ul
+    - data.links.each do | link |
+      li class="#{link.key_name}"
+        a href="#{link.href}"
