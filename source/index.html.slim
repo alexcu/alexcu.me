@@ -4,7 +4,7 @@ header
   ul
     - data.links.each do | key, link |
       li class="#{key}"
-        a href="#{link.href}"
+        a href="#{link.href}"= link.text
 
 section#hello.white
   header

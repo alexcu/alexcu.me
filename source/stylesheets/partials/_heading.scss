@@ -2,7 +2,8 @@ body > header {
   @include responsive();
   @include text-shadow(#fff);
 
-  padding-top: 8em;
+  margin-top: 8em;
+  margin-bottom: 3em;
 
   * {
     margin: 0px;
@@ -49,6 +50,7 @@ body > header {
       background-position: center;
       background-size: 65%;
       background-repeat: no-repeat;
+      text-indent: -9999px;
     }
     // Logos
     li.linkedin     a { @include linkedin-logo();     }
