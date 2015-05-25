@@ -19,3 +19,9 @@ section#hello.white
 section#workwith
   header
     h1 I like working with...
+    h2
+  article
+    ul.logolist
+      - data.technologies.each do | key, link |
+        li style="background-image:url('/images/logos/#{key}.svg');"
+          a href="#{link.href}"= link.text

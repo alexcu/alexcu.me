@@ -1,6 +1,6 @@
 section {
   @include responsive();
-  @include text-shadow(#eee);
+  @include text-shadow(#fff);
 
   margin: 3em 0px;
   padding-top: 3em;
@@ -13,6 +13,7 @@ section {
 }
 
 section.white {
+  @include text-shadow(#eee);
   background-color: #fff;
   border-top: solid 1px $medium-gray-color;
   border-bottom: solid 1px $medium-gray-color;
@@ -20,11 +21,20 @@ section.white {
 
 section header {
   width: 100%;
+  h1, h2 {
+    display: inline-block;
+    font-size: 2em;
+    font-style: oblique;
+  }
   h1 {
     font-weight: $thin;
     white-space: nowrap;
     margin-bottom: 1em;
     letter-spacing: -1px;
-    font-style: oblique;
+  }
+  h2 {
+    font-weight: $medium;
+    color: $medium-blue-color;
+    margin-left: 1ex;
   }
 }

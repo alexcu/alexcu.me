@@ -1,6 +1,7 @@
 section article {
   p {
     text-align: justify;
+    font-weight: $light;
     line-height: $base-line-height;
   }
   p:not(:first-child) {
@@ -10,7 +11,8 @@ section article {
     margin-bottom: 2em;
   }
   p strong {
-    font-weight: $medium;
+    font-size: 1.2em;
+    font-weight: $regular;
   }
   p a {
     font-weight: $bold;

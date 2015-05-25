@@ -1,0 +1,24 @@
+angularjs:
+  text: AngularJS
+  href: http://
+css3:
+  text: CSS3 and SCSS
+  href: http://
+apple:
+  text: Objective-C
+  href: http://
+node:
+  text: Node.js
+  href: http://
+rails:
+  text: Ruby on Rails
+  href: http://
+bootstrap:
+  text: Bootstrap 3
+  href: http://
+coffeescript:
+  text: CoffeeScript
+  href: http://
+middleman:
+  text: Middleman
+  href: http://
