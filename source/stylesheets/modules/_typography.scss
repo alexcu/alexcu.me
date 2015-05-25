@@ -5,74 +5,74 @@ $regular: 400;
 $medium:  500;
 $bold:    600;
 
-// Import Helvetica
+// Import Fira Sans
 @font-face {
-  src:          url('/fonts/HelveticaNeueThin.ttf');
-  font-family: 'Helvetica Neue';
+  src:          url('/fonts/FiraSans-Thin.otf');
+  font-family: 'Fira Sans';
   font-style:   normal;
   font-weight:  $thin;
 }
 
 @font-face {
-  src:          url('/fonts/HelveticaNeueThinItalic.ttf');
-  font-family: 'Helvetica Neue';
+  src:          url('/fonts/FiraSans-ThinItalic.otf');
+  font-family: 'Fira Sans';
   font-style:   italic;
   font-weight:  $thin;
 }
 
 @font-face {
-  src:          url('/fonts/HelveticaNeueLight.ttf');
-  font-family: 'Helvetica Neue';
+  src:          url('/fonts/FiraSans-Light.otf');
+  font-family: 'Fira Sans';
   font-style:   normal;
   font-weight:  $light;
 }
 
 @font-face {
-  src:          url('/fonts/HelveticaNeueLightItalic.ttf');
-  font-family: 'Helvetica Neue';
+  src:          url('/fonts/FiraSans-LightItalic.otf');
+  font-family: 'Fira Sans';
   font-style:   italic;
   font-weight:  $light;
 }
 
 @font-face {
-  src:          url('/fonts/HelveticaNeue.ttf');
-  font-family: 'Helvetica Neue';
+  src:          url('/fonts/FiraSans-Regular.otf');
+  font-family: 'Fira Sans';
   font-style:   normal;
   font-weight:  $regular;
 }
 
 
 @font-face {
-  src:          url('/fonts/HelveticaNeueItalic.ttf');
-  font-family: 'Helvetica Neue';
+  src:          url('/fonts/FiraSans-Italic.otf');
+  font-family: 'Fira Sans';
   font-style:   italic;
   font-weight:  $regular;
 }
 
 @font-face {
-  src:          url('/fonts/HelveticaNeueMedium.ttf');
-  font-family: 'Helvetica Neue';
+  src:          url('/fonts/FiraSans-Medium.otf');
+  font-family: 'Fira Sans';
   font-style:   normal;
   font-weight:  $medium;
 }
 
 @font-face {
-  src:          url('/fonts/HelveticaNeueMediumItalic.ttf');
-  font-family: 'Helvetica Neue';
+  src:          url('/fonts/FiraSans-MediumItalic.otf');
+  font-family: 'Fira Sans';
   font-style:   italic;
   font-weight:  $medium;
 }
 
 @font-face {
-  src:          url('/fonts/HelveticaNeueBold.ttf');
-  font-family: 'Helvetica Neue';
+  src:          url('/fonts/FiraSans-Bold.otf');
+  font-family: 'Fira Sans';
   font-style:   normal;
   font-weight:  $bold;
 }
 
 @font-face {
-  src:          url('/fonts/HelveticaNeueBoldItalic.ttf');
-  font-family: 'Helvetica Neue';
+  src:          url('/fonts/FiraSans-BoldItalic.otf');
+  font-family: 'Fira Sans';
   font-style:   italic;
   font-weight:  $bold;
 }
@@ -82,4 +82,8 @@ $bold:    600;
   font-size: $sizeValue + rem;
 }
 
-$font-stack: 'Helvetica Neue', Helvetica, sans-serif !default;
+@mixin text-shadow($color: #fff) {
+  text-shadow: 0 1px 0 $color;
+}
+
+$font-stack: 'Fira Sans', Helvetica, sans-serif !default;
