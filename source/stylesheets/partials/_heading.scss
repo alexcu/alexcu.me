@@ -26,16 +26,28 @@ body > header {
     letter-spacing: -1px;
   }
   ul {
+    $square-size: 3em;
+    $hover-height: 0.5em;
+
     margin-top: 3em;
     list-style: none;
     -webkit-padding-start: 0px;
+    display: flex;
+    align-items: flex-end;
+    height: $square-size + $hover-height;
+
     li {
       display: inline-block;
-      width: 3em;
-      height: 3em;
+      width: $square-size;
+      height: $square-size;
       background-color: $dark-gray-color;
       border-radius: 0.8em;
       box-shadow:  0 1px 0 #fff;
+
+      transition: margin-bottom 0.25s ease;
+    }
+    li:hover {
+      margin-bottom: $hover-height;
     }
     li:not(:last-child) {
       margin-right: 1em;
