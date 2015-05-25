@@ -1,3 +1,30 @@
 section {
-  padding: 50px;
+  @include responsive();
+  @include text-shadow(#eee);
+
+  margin: 3em 0px;
+  padding-top: 3em;
+  padding-bottom: 3em;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.white {
+  background-color: #fff;
+  border-top: solid 1px $medium-gray-color;
+  border-bottom: solid 1px $medium-gray-color;
+}
+
+section header {
+  width: 100%;
+  h1 {
+    font-weight: $thin;
+    white-space: nowrap;
+    margin-bottom: 1em;
+    letter-spacing: -1px;
+    font-style: oblique;
+  }
 }

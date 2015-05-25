@@ -1,0 +1,33 @@
+section article {
+  p {
+    text-align: justify;
+    line-height: $base-line-height;
+  }
+  p:not(:first-child) {
+    margin: 2em 0;
+  }
+  p:first-child {
+    margin-bottom: 2em;
+  }
+  p strong {
+    font-weight: $medium;
+  }
+  p a {
+    font-weight: $bold;
+    color: $medium-blue-color;
+    font-style: oblique;
+    text-decoration: none;
+  }
+  p a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  section > article {
+    width: 66%;
+  }
+  section > article + aside {
+    width: 30%;
+  }
+}

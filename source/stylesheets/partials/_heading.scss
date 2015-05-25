@@ -1,7 +1,7 @@
 body > header {
   @include responsive();
+  @include text-shadow(#fff);
 
-  text-shadow: 0 1px 0 #fff;
   padding-top: 8em;
 
   * {
@@ -14,7 +14,7 @@ body > header {
     color: $dark-gray-color;
 
     font-size: 5em;
-    letter-spacing: -3px;
+    letter-spacing: -7px;
 
     margin-bottom: 5px;
   }
@@ -33,7 +33,7 @@ body > header {
       width: 3em;
       height: 3em;
       background-color: $dark-gray-color;
-      border-radius: 10px;
+      border-radius: 0.8em;
       box-shadow:  0 1px 0 #fff;
     }
     li:not(:last-child) {

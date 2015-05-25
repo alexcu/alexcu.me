@@ -43,13 +43,15 @@ require "slim"
 # end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+require "redcarpet/compat"
+helpers do
+  def markdownify(src)
+    Markdown.new(src).to_html
+  end
+end
 
 set :css_dir, 'stylesheets'
+activate :autoprefixer
 
 set :js_dir, 'javascripts'
 
