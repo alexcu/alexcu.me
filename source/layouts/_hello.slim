@@ -1,0 +1,8 @@
+header
+  h1= data.hello.header
+article
+  = markdownify(data.hello.body)
+aside
+  figure
+    img src="#{data.hello.photo.src}" alt="#{data.hello.photo.alt}"
+    figcaption= data.hello.photo.alt

@@ -1,39 +1,11 @@
 header
-  h1 Alex Cummaudo
-  h2 Software Engineer. Melbourne, Australia.
-  ul
-    - data.links.each do | key, link |
-      li class="#{key}"
-        a href="#{link.href}"= link.text
+  =partial 'layouts/header'
 
 section#hello.white
-  header
-    h1= data.hello.header
-  article
-    = markdownify(data.hello.body)
-  aside
-    figure
-      img src="#{data.hello.photo.src}" alt="#{data.hello.photo.alt}"
-      figcaption= data.hello.photo.alt
+  =partial 'layouts/hello'
 
 section#technologies
-  header
-    h1 I like working with...
-    h2
-  article
-    ul.displaylist.technologieslist
-      - data.technologies.each do | key, link |
-        li
-          a style="background-image:url('/images/technologies/#{key}.svg');" href="#{link.href}"= link.text
+  =partial 'layouts/technologies'
 
 section#portfolio.white
-  header
-    h1 ...and with them I've created...
-  article
-    ul.displaylist.portfoliolist
-      - data.portfolio.each do | key, link |
-        li
-          a href="#{link.href}"
-            figure
-              img src="/images/porfolio/#{key}.png"
-              figcaption= link.text
+  =partial 'layouts/portfolio'

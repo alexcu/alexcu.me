@@ -1,0 +1,6 @@
+h1 Alex Cummaudo
+h2 Software Engineer. Melbourne, Australia.
+ul
+  - data.links.each do | key, link |
+    li class="#{key}"
+      a href="#{link.href}"= link.text
