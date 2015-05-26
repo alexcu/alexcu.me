@@ -17,5 +17,5 @@ function setupSwitchText (headerTagline, linkList) {
 setupSwitchText(  document.querySelector("body > header > h2"),
                   document.querySelector("body > header > ul"));
 
-setupSwitchText(  document.querySelector("section#workwith > header  > h2"),
-                  document.querySelector("section#workwith > article > ul.logolist"));
+setupSwitchText(  document.querySelector("section#technologies > header  > h2"),
+                  document.querySelector("section#technologies > article > ul"));

@@ -1,0 +1,16 @@
+ul.technologieslist {
+  li {
+    // 4 on one line
+    width: 10em;
+    height: 10em;
+
+    a {
+      // Growing logo icons
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      // Hide actual text
+      text-indent: -9999px;
+    }
+  }
+}

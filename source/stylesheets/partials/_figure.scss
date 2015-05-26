@@ -1,18 +1,24 @@
 figure {
   img {
     border-radius: 0.8em;
+    width: 100%;
   }
   figcaption {
     font-style: oblique;
     font-weight: medium;
     font-size: 0.8em;
     float: right;
+    text-align: right;
+    clear: both;
   }
 }
 
 aside figure {
   width: 100%;
   text-align: right;
+  figcaption {
+    float: left;
+  }
   img, figcaption {
     width: 75%;
   }
