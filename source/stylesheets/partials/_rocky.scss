@@ -1,0 +1,40 @@
+section#rocky {
+  align-items: flex-start;
+
+  background-image: url('/images/rocky.png');
+  background-repeat: no-repeat;
+  background-position: 5% bottom;
+  height: 500px;
+
+  figure {
+    margin-left: auto;
+  }
+
+  .rockytext {
+    font-weight: $thin;
+    white-space: nowrap;
+    letter-spacing: -1px;
+    font-style: oblique;
+    font-size: 5em;
+  }
+
+  // fix rocky background for tablet
+  @media only screen and (max-width: 992px) {
+    background-size: 40%;
+    height: 370px;
+    .rockytext {
+      font-size: 4.5em;
+    }
+  }
+  // fix rocky background for mobile
+  @media only screen and (max-width: 768px) {
+    background-size: 40%;
+    background-position: center bottom;
+    .rockytext {
+      font-size: 3em;
+    }
+    figure {
+      margin-top: -170px;
+    }
+  }
+}
