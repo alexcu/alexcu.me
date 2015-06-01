@@ -1,0 +1,36 @@
+ul.researchlist {
+  -webkit-padding-start: 0px;
+  list-style: none;
+  li {
+    padding: 2em 0px;
+    &:not(:last-child) {
+      border-bottom: solid 1px $medium-gray-color;
+    }
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  h2 {
+    font-weight: $medium;
+    font-style: oblique;
+    margin: 0px;
+  }
+  small.date {
+    font-weight: $light;
+    width: 100%;
+    display: block;
+  }
+  p.abstract {
+    margin: 0px;
+    margin-top: 2em;
+    overflow: hidden;
+    max-height: 3em;
+    transition: max-height 0.5s ease;
+  }
+  // Grow height on hover
+  a:hover p.abstract {
+    max-height: 25em;
+    white-space: normal;
+  }
+}
