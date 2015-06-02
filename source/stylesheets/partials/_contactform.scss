@@ -1,0 +1,43 @@
+form.contact {
+  display: flex;
+  flex-wrap: wrap;
+  input, label, textarea {
+    border-radius: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 0.5em;
+  }
+  label, textarea {
+    padding-top: 0.5em;
+  }
+  input, textarea {
+    border: 1px solid $medium-gray-color;
+    outline: none;
+    &:hover, &:focus {
+      border-color: darken($medium-gray-color, 20%);
+    }
+    &:focus {
+      border-color: $medium-blue-color;
+    }
+  }
+  input, label {
+    display: inline-block;
+    height: 2em;
+  }
+  input {
+    flex: 4;
+  }
+  label {
+    flex: 1;
+    text-align: center;
+    color: $dark-gray-color;
+  }
+  textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+  }
+  button {
+    margin-left: auto;
+  }
+}
