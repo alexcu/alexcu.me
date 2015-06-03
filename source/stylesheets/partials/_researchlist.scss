@@ -26,11 +26,11 @@ ul.researchlist {
     margin-top: 2em;
     overflow: hidden;
     max-height: 3em;
-    transition: max-height 0.5s ease;
+    transition: max-height 2s ease;
   }
   // Grow height on hover
   a:hover p.abstract {
-    max-height: 25em;
+    max-height: 999px;
     white-space: normal;
   }
 }
