@@ -1,0 +1,7 @@
+footer {
+  @include responsive();
+  @include text-shadow();
+  text-align: center;
+  color: $medium-gray-color;
+  height: 4em;
+}
