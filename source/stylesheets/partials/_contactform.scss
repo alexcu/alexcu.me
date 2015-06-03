@@ -35,7 +35,7 @@ form.contact {
     input, label {
       display: inline-block;
     }
-    input {
+    input:not([type="submit"]) {
       flex: 4;
       width: auto;
     }
@@ -48,14 +48,17 @@ form.contact {
     width: 100%;
     resize: none;
   }
-  button {
-    margin-left: auto;
-    -webkit-appearance: none;
-    background: none;
-    border: none;
-    color: darken($medium-gray-color, 20%);
-    &:hover {
-      color: $medium-blue-color;
+  @include medium-layout {
+    input[type='submit'] {
+      margin-left: auto;
+      width: auto;
+      -webkit-appearance: none;
+      background: none;
+      border: none;
+      color: darken($medium-gray-color, 20%);
+      &:hover {
+        color: $medium-blue-color;
+      }
     }
   }
 }
