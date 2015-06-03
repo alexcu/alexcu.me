@@ -20,7 +20,7 @@ $large-layout-min-size:  1200px;
 }
 // Applied to mobile layouts only
 @mixin mobile-layout-only {
-  @media #{generate-media-query($mobile-layout-min-size, $tablet-layout-min-size)} {
+  @media #{generate-media-query($mobile-layout-min-size, $tablet-layout-min-size - 1px)} {
     @content;
   }
 }
@@ -32,7 +32,7 @@ $large-layout-min-size:  1200px;
 }
 // Applied to tablet sized layouts only
 @mixin tablet-layout-only {
-  @media #{generate-media-query($tablet-layout-min-size, $medium-layout-min-size)} {
+  @media #{generate-media-query($tablet-layout-min-size, $medium-layout-min-size - 1px)} {
     @content;
   }
 }
@@ -44,7 +44,7 @@ $large-layout-min-size:  1200px;
 }
 // Applied to medium sized layouts only
 @mixin medium-layout-only {
-  @media #{generate-media-query($medium-layout-min-size, $large-layout-min-size)} {
+  @media #{generate-media-query($medium-layout-min-size, $large-layout-min-size - 1px)} {
     @content;
   }
 }
