@@ -3,17 +3,24 @@ ul.portfoliolist li {
   figure figcaption {
     white-space: nowrap;
   }
+  @include mobile-layout-only {
+    align-self: flex-start;
+    figure figcaption {
+      white-space: normal;
+    }
+  }
   @include medium-layout {
     width: 12.5em;
-  }
-  a {
-    color: #000;
-  }
-  @include large-layout {
     // fix spacing before 3n-1'th last child
     &:nth-child(3n-1):last-child {
       margin-right: auto;
       margin-left: 4.5%
     }
+  }
+  @include large-layout {
+    width: 15em;
+  }
+  a {
+    color: #000;
   }
 }
