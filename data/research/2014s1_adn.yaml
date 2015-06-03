@@ -1,4 +1,5 @@
-title:  Foobar
+title:  Limitations on Parallel Processing
 date:   June 2014
-href:   http://
+href:   https://www.dropbox.com/s/0u8l0o1p4fbk0gq/2014-S1-ADN.pdf?dl=1
 abstract: >
+  Parallel processing takes advantage of concurrent processing by delegating different portions of work to different threads, with the ideal aim that the task will reach completion faster. However, where does the balance lie for lowering the workload per thread and increasing the number of processing threads? Do limitations arise where an excessive amount of threads are used for parallel processing? What range exists for delegating an ideal amount of work to an ideal amount of threads for parallel processing? By developing a simple image processing program that makes use of concurrency utilities, parallel computation limitations were discovered, wherein advantages to reduced time where more parallel processing threads are used is worsened by having too many threads processing smaller and smaller pieces of data. Discussion into a heuristic for parallel tasks suggest ways in which this issue can be battled.

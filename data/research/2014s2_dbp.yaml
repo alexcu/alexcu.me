@@ -1,4 +1,5 @@
-title:  Foobar
-date:   June 2014
-href:   http://
+title:  An assessment of performance and operability of ORM and SQL querying in Document-Oriented, Object-Relational and Relational DBMSs
+date:   November 2014
+href:   https://www.dropbox.com/s/28sraqj1z5qtp4z/2014s2-dbp.pdf?dl=1
 abstract: >
+  Database programmers have a variety of tools at their fingertips. Which of these tools provide the greatest operability and flexibility? How well do these tools operate with high loads of data, and is there an adverse affect to performance for the sake of greater ease of programming? What kinds of queries on the database perform better than others? By developing a simple database testing tool over MySQL, PostgreSQL and MongoDb DBMSs, differently sized datasets were tested under different query patterns, which demonstrated poor performance and operability with MongoDb against MySQL or PostgreSQL, though ORM for MySQL and PostgreSQL tended to perform better than raw SQL queries. However, such a varied distribution of results concluded that performance will vary over dataset size.

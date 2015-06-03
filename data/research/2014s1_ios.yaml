@@ -1,4 +1,5 @@
-title:  Foobar
+title:  An Analysis of HCI in Mobile Platforms
 date:   June 2014
-href:   http://
+href:   https://www.dropbox.com/s/iqhxsmlzo4ssfkg/2014-S1-CDDMA.pdf?dl=1
 abstract: >
+  Mobile platforms today have changed more in the last five years than since the dawn of mobile devices. The success of major mobile platforms today can be attributed to their revolutionary UIs that shifted traditional HCI with new HCI. What is it about the design that makes these platforms successful? Do different major platforms differ in their implementation of HCI, and how does this change the user experience between them? On inspection of design guidelines and critical differential analysis popular apps between the iOS and Android platforms, it was found that iOS has a greater focus on content, while Android keeps its user's needs paramount. A good UI on iOS is considered clean, non-competitive with content and largely should play a supporting role to the content. That of Android is more emotionally involved with the user, provides features that aids users more and allows greater customisability options. Ultimately, the user experience is similar between the two, but the subtle differences in the respective design principles are just enough to change what the focus of the HCI is between varying platforms.
