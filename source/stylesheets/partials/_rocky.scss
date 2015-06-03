@@ -21,13 +21,13 @@ section#rocky {
   // fix rocky background for mobile
   @include mobile-layout-only {
     background-size: contain;
-    background-position: -200px bottom;
-    height: 400px;
+    background-position: -125px bottom;
+    height: 250px;
     .rockytext {
       font-size: 3em;
     }
     figure {
-      margin-top: -170px;
+      margin-top: -33%;
     }
   }
   @include tablet-layout-only {
