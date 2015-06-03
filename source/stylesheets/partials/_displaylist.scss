@@ -11,7 +11,7 @@ ul.displaylist {
     justify-content: center;
     align-items: center;
 
-    @include smartphone-only {
+    @include mobile-layout-only {
       // Have two on one line
       flex-basis: 40%;
     }

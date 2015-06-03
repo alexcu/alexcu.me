@@ -3,8 +3,9 @@ section#rocky {
 
   background-image: url('/images/rocky.png');
   background-repeat: no-repeat;
-  background-position: responsive-side-push() bottom;
-  height: 500px;
+  background-position: left bottom;
+
+  height: 700px;
 
   figure {
     margin-left: auto;
@@ -19,7 +20,7 @@ section#rocky {
   }
 
   // fix rocky background for tablet
-  @include tablet {
+  @include tablet-layout-only {
     background-size: 40%;
     height: 370px;
     .rockytext {
@@ -27,9 +28,10 @@ section#rocky {
     }
   }
   // fix rocky background for mobile
-  @include smartphone-only {
-    background-size: 40%;
+  @include mobile-layout-only {
+    background-size: 50%;
     background-position: center bottom;
+    height: 400px;
     .rockytext {
       font-size: 3em;
     }

@@ -1,0 +1,56 @@
+/**
+ * Media query shortcuts:
+ *
+ * Mobile ∈ [0  ,  768] pixels
+ * Tablet ∈ [768,  992) pixels
+ * Medium ∈ [992, 1200) pixels
+ * Large  ∈ [1200, inf) pixels
+ */
+$mobile-layout-min-size: 0px;
+$tablet-layout-min-size: 768px;
+$medium-layout-min-size: 992px;
+$large-layout-min-size:  1200px;
+// Generate the media query for the given min and max sizes
+// If no max is provided, only a min-width is used in the query
+@function generate-media-query($min, $max: -1) {
+  @if $max == -1 {
+    @return "only screen and (min-width: #{$min})";
+  }
+  @return "only screen and (min-width: #{$min}) and (max-width: #{$max})";
+}
+// Applied to mobile layouts only
+@mixin mobile-layout-only {
+  @media #{generate-media-query($mobile-layout-min-size, $tablet-layout-min-size)} {
+    @content;
+  }
+}
+// Applied to layouts that are greater than tablet layouts
+@mixin tablet-layout {
+  @media #{generate-media-query($tablet-layout-min-size)} {
+    @content;
+  }
+}
+// Applied to tablet sized layouts only
+@mixin tablet-layout-only {
+  @media #{generate-media-query($tablet-layout-min-size, $medium-layout-min-size)} {
+    @content;
+  }
+}
+// Applied to layouts that are greater than medium layouts
+@mixin medium-layout {
+  @media #{generate-media-query($medium-layout-min-size)} {
+    @content;
+  }
+}
+// Applied to medium sized layouts only
+@mixin medium-layout-only {
+  @media #{generate-media-query($medium-layout-min-size, $large-layout-min-size)} {
+    @content;
+  }
+}
+// Applied to layouts that are greater than medium layouts
+@mixin large-layout {
+  @media #{generate-media-query($large-layout-min-size)} {
+    @content;
+  }
+}

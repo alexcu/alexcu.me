@@ -5,67 +5,38 @@ $responsive-width-mobile: 290px;
 $responsive-width-tablet: 668px;
 $responsive-width-medium: 992px;
 $responsive-width-large : 1200px;
-/**
- * Media query shortcuts:
- *
- * Smartphone  ∈ [0  , 768]  pixels
- * Tablet      ∈ [768, 992)  pixels
- * Medium      ∈ [992, 1200) pixels
- * Large       ∈ [1200, inf) pixels
- */
-$media-smartphone:  "only screen and (max-width: 768px)";
-@mixin smartphone-only {
-  @media #{$media-smartphone} {
-    @content;
-  }
-}
-$media-tablet:      "only screen and (min-width: 768px)";
-@mixin tablet {
-  @media #{$media-tablet} {
-    @content;
-  }
-}
-$media-medium:      "only screen and (min-width: 992px)";
-@mixin medium {
-  @media #{$media-medium} {
-    @content;
-  }
-}
-$media-large:       "only screen and (min-width: 1200px)";
-@mixin large {
-  @media #{$media-large} {
-    @content;
-  }
-}
 /*
  * Responsive container
  */
+// Calculates the push-in side width
 @function calculate-side-with($width) {
   @return calc((100% - #{$width}) / 2);
 }
+// Pushes the content into the center width using padding
 @mixin push-center($width) {
   $side-width: calculate-side-with($width);
   padding-left: $side-width;
   padding-right: $side-width;
   width: $width;
 }
+// Include this mixin to make the layout responsive to layouts
 @mixin responsive() {
-  @include smartphone-only {
+  @include mobile-layout-only {
     @include push-center($responsive-width-mobile);
     @include font-size(1.2);
   }
 
-  @include tablet {
+  @include tablet-layout {
     @include push-center($responsive-width-tablet);
     @include font-size(1.3);
   }
 
-  @include medium {
+  @include medium-layout {
     @include push-center($responsive-width-medium);
     @include font-size(1.6);
   }
 
-  @include large {
+  @include large-layout {
     @include push-center($responsive-width-large);
     @include font-size(1.6);
   }

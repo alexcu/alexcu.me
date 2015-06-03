@@ -23,7 +23,7 @@ aside figure {
     width: 75%;
   }
   // Keep on the left for smartphones
-  @include smartphone-only {
+  @include mobile-layout-only {
     width: 50%;
     text-align: left;
     figcaption {
