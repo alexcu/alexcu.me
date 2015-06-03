@@ -3,9 +3,8 @@ section#rocky {
 
   background-image: url('/images/rocky.png');
   background-repeat: no-repeat;
-  background-position: left bottom;
 
-  height: 700px;
+  height: 600px;
 
   figure {
     margin-left: auto;
@@ -19,18 +18,10 @@ section#rocky {
     font-size: 5em;
   }
 
-  // fix rocky background for tablet
-  @include tablet-layout-only {
-    background-size: 40%;
-    height: 370px;
-    .rockytext {
-      font-size: 4.5em;
-    }
-  }
   // fix rocky background for mobile
   @include mobile-layout-only {
-    background-size: 50%;
-    background-position: center bottom;
+    background-size: contain;
+    background-position: -200px bottom;
     height: 400px;
     .rockytext {
       font-size: 3em;
@@ -38,5 +29,26 @@ section#rocky {
     figure {
       margin-top: -170px;
     }
+  }
+  @include tablet-layout-only {
+    height: 290px;
+    .rockytext {
+      font-size: 4.5em;
+    }
+    $side-width: calculate-side-width($responsive-width-tablet);
+    background-position: $side-width bottom;
+    background-size: 60%;
+  }
+  @include medium-layout-only {
+    $side-width: calculate-side-width($responsive-width-medium);
+    background-position: $side-width bottom;
+    background-size: 80%;
+    height: 450px;
+  }
+  @include large-layout {
+    $side-width: calculate-side-width($responsive-width-large - 250px);
+    background-position: $side-width bottom;
+    background-size: contain;
+    height: 460px;
   }
 }
