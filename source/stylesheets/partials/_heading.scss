@@ -72,8 +72,7 @@ body > header {
     li.resume       a { @include resume-logo();       }
   }
 
-  // Mobile
-  @media only screen and (max-width: 768px) {
+  @include smartphone-only {
     padding-top: 5em;
     h1, h2 {
       letter-spacing: -1px;

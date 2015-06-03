@@ -25,7 +25,7 @@ section article {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@include tablet {
   section > article {
     width: 66%;
   }

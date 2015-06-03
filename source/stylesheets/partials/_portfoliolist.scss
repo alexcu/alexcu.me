@@ -3,13 +3,13 @@ ul.portfoliolist li {
   figure figcaption {
     white-space: nowrap;
   }
-  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  @include medium {
     width: 12.5em;
   }
   a {
     color: #000;
   }
-  @media only screen and (max-width: 1200px) {
+  @include large {
     // fix spacing before 3n-1'th last child
     &:nth-child(3n-1):last-child {
       margin-right: auto;

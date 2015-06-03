@@ -22,7 +22,8 @@ aside figure {
   img, figcaption {
     width: 75%;
   }
-  @media only screen and (max-width: 768px) {
+  // Keep on the left for smartphones
+  @include smartphone-only {
     width: 50%;
     text-align: left;
     figcaption {
