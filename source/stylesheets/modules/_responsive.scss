@@ -9,12 +9,12 @@ $responsive-width-large : 1200px;
  * Responsive container
  */
 // Calculates the push-in side width
-@function calculate-side-with($width) {
+@function calculate-side-width($width) {
   @return calc((100% - #{$width}) / 2);
 }
 // Pushes the content into the center width using padding
 @mixin push-center($width) {
-  $side-width: calculate-side-with($width);
+  $side-width: calculate-side-width($width);
   padding-left: $side-width;
   padding-right: $side-width;
   width: $width;
