@@ -39,5 +39,12 @@ form.contact {
   }
   button {
     margin-left: auto;
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+    color: darken($medium-gray-color, 20%);
+    &:hover {
+      color: $medium-blue-color;
+    }
   }
 }
