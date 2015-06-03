@@ -1,4 +1,4 @@
-ul.technologieslist {
+ul.technologies {
   li {
     // 4 on one line
     width: 10em;
@@ -21,7 +21,7 @@ ul.technologieslist {
     display: none;
   }
   // Display the a label instead
-  ul.technologieslist li {
+  ul.technologies li {
     height: 12em;
     margin-bottom: 3em;
     a {

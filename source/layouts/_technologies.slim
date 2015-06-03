@@ -2,7 +2,7 @@ header
   h1 I like working with...
   h2
 article
-  ul.displaylist.technologieslist
+  ul.columnized.technologies
     - data.technologies.each do | key, link |
       li
         a style="background-image:url('/images/technologies/#{key}.svg');" href="#{link.href}"= link.text
