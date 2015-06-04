@@ -1,6 +1,8 @@
 section article {
   p {
-    text-align: justify;
+    @include tablet-layout {
+      text-align: justify;
+    }
     font-weight: $light;
     line-height: $base-line-height;
   }
