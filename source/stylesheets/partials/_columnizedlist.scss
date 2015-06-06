@@ -5,7 +5,7 @@ ul.columnized {
   align-items: space-between;
   -webkit-padding-start: 0px;
   list-style: none;
-  li {
+  & > li {
     margin-bottom: 2em;
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@ ul.columnized {
       flex-basis: 40%;
     }
 
-    a {
+    & > a {
       display: block;
       width: 90%;
       height: 90%;

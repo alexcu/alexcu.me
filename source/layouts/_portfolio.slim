@@ -4,7 +4,22 @@ article
   ul.columnized.portfolio
     - data.portfolio.each do | key, link |
       li
-        a href="#{link.href}"
+        a id="#modal-#{key}-src" href="#modal-#{key}"
           figure
             img src="/images/porfolio/#{key}.png"
             figcaption= link.text
+        dialog.modal.gallery id="modal-#{key}"
+          button.close &times;
+          article
+            header
+              h1= link.text
+              p= link.tagline
+            ul
+              li
+              li
+              li
+              li
+              li
+              li
+            footer
+              a href="" Learn More

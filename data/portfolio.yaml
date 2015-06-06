@@ -1,15 +1,20 @@
 doubtfire:
-  href:   http://
-  text:   Doubtfire Learning System
+  href:     http://
+  text:     Doubtfire Learning System
+  tagline:  A learning system for students
 ssilwebsite:
-  href:   http://
-  text:   SSIL Website
+  href:     http://
+  text:     SSIL Website
+  tagline:  Mobile responsive website to showcase SSIL's Work
 falcon:
-  href:   http://
-  text:   Falcon Drone System
+  href:     http://
+  text:     Falcon Drone System
+  tagline:  Controlling drones for tomorrow
 paperbox:
-  href:   http://
-  text:   Paperbox Studios Website
+  href:     http://
+  text:     Paperbox Studios Website
+  tagline:  Website for creative indie game devs
 mbt:
-  href:   http://
-  text:   Bus Tracker Fleet Visualiser
+  href:     http://
+  text:     Bus Tracker Fleet Visualiser
+  tagline:  Visualiser tracking buses in Kuala Lumpur

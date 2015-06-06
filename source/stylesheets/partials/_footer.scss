@@ -1,4 +1,4 @@
-footer {
+body > footer {
   @include responsive();
   @include text-shadow();
   text-align: center;

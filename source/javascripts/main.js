@@ -64,8 +64,27 @@ function touchFriendly (anchorEl) {
   }
   anchorEl.onclick = firstTap;
 }
-
 var anchorEls = document.querySelectorAll(':not(p) > a[href^="http"]');
 for (var i = 0; i < anchorEls.length; i++) {
   touchFriendly(anchorEls[i]);
+};
+/**
+ * Sets up the modal
+ */
+function setupModal(modalEl) {
+  // Add modal class to body
+  var srcAnchor = document.querySelector('a[href="#' + modalEl.id + '"]');
+  srcAnchor.onclick = function() {
+    document.querySelector('body').classList.add('modal');
+  }
+  // Setup close modal
+  var closeEl = modalEl.querySelector('button.close');
+  closeEl.onclick = function () {
+    document.querySelector('body').classList.remove('modal');
+    window.location.hash = 'modal-' + modalEl.id + '-src';
+  };
+}
+var modalEls = document.querySelectorAll('dialog.modal');
+for (var i = 0; i < modalEls.length; i++) {
+  setupModal(modalEls[i]);
 };

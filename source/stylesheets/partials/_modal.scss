@@ -1,0 +1,33 @@
+body.modal {
+  overflow: hidden;
+}
+
+dialog.modal {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: 100%;
+  background-color: #fff;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 1s ease;
+  &:target {
+    opacity: 0.95;
+    z-index: 1;
+  }
+  button.close {
+    position: absolute;
+    border: none;
+    right: 0px;
+
+    -webkit-appearance: none;
+    background-color: transparent;
+
+    font-size: 2em;
+
+    height: 3em;
+    width: 3em;
+
+    color: $dark-gray-color;
+  }
+}
