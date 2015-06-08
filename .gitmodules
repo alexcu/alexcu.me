@@ -1,0 +1,3 @@
+[submodule "mailer"]
+	path = mailer
+	url = https://git.heroku.com/cryptic-stream-5488.git
