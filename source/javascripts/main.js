@@ -88,3 +88,12 @@ var modalEls = document.querySelectorAll('dialog.modal');
 for (var i = 0; i < modalEls.length; i++) {
   setupModal(modalEls[i]);
 };
+/**
+ * Updates value CSS input for form validation
+ */
+var validationEls = document.querySelectorAll('input[required], textarea[required]');
+for (var i = 0; i < validationEls.length; i++) {
+  validationEls[i].onchange = function (e) {
+    e.target.dataset['dirty'] = "";
+  }
+};
