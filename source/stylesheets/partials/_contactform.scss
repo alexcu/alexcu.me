@@ -51,6 +51,23 @@ form.contact {
     width: 100%;
     resize: none;
   }
+  .response {
+    width: 100%;
+    text-align: right;
+    font-size: 0.9em;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    a {
+      color: $medium-blue-color;
+      font-weight: $medium;
+      font-style: oblique;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
   @include medium-layout {
     input[type='submit'] {
       margin-left: auto;

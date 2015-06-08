@@ -97,3 +97,40 @@ for (var i = 0; i < validationEls.length; i++) {
     e.target.dataset['dirty'] = "";
   }
 };
+/**
+ * XHR and form validation
+ */
+var form = document.querySelector("form");
+form.onsubmit = function () {
+  var els = form.querySelectorAll('input,textarea');
+  for (var i = 0; i < els.length; i++) {
+    els[i].dataset['dirty'] = "";
+    if (!els[i].validity.valid) {
+      return false;
+    }
+  }
+  var xhr = new XMLHttpRequest();
+  var formData = new FormData(form);
+  xhr.open('POST', 'https://cryptic-stream-5488.herokuapp.com/ ', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4) {
+      var success = xhr.status == 200;
+      var selector = success ? '.success' : '.failure';
+      var statusEl = form.querySelector('.response' + selector);
+      statusEl.style.opacity = 1;
+      statusEl.style.zindex = 0;
+      if (success) {
+          form.reset();
+          for (var i = 0; i < els.length; i++) {
+            delete els[i].dataset['dirty'];
+          }
+          setTimeout(function() {
+            statusEl.style.opacity = 0;
+            statusEl.style.zindex = -1;
+          }, 3000);
+      }
+    }
+  }
+  xhr.send(formData);
+  return false;
+};
