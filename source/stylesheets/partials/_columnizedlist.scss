@@ -1,10 +1,10 @@
 ul.columnized {
+  @include no-list-styles();
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: space-between;
-  -webkit-padding-start: 0px;
-  list-style: none;
   & > li {
     margin-bottom: 2em;
     display: flex;

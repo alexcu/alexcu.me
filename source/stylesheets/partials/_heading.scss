@@ -26,12 +26,12 @@ body > header {
     letter-spacing: -1px;
   }
   ul {
+    @include no-list-styles();
+    
     $square-size: 3em;
     $hover-height: 0.5em;
 
     margin-top: 3em;
-    list-style: none;
-    -webkit-padding-start: 0px;
     display: flex;
     align-items: flex-end;
     height: $square-size + $hover-height;

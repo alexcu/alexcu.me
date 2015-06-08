@@ -1,6 +1,6 @@
 ul.research {
-  -webkit-padding-start: 0px;
-  list-style: none;
+  @include no-list-styles();
+  
   li {
     padding: 2em 0px;
     &:not(:last-child) {
