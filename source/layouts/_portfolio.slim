@@ -4,14 +4,16 @@ article
   ul.columnized.portfolio
     - data.portfolio.each do | key, link |
       li
+        - key = key.split('_').last
         a id="#modal-#{key}-src" href="#modal-#{key}"
           figure
-            img src="/images/porfolio/#{key}.png"
+            img src="/images/portfolio/#{key}.svg"
             figcaption= link.text
         dialog.modal.gallery id="modal-#{key}"
           button.close &times;
           article
             header
+              img src="/images/portfolio/#{key}.svg"
               h1= link.text
               p= link.tagline
             ul

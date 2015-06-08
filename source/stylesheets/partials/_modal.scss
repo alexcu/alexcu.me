@@ -15,6 +15,11 @@ dialog.modal {
     opacity: 0.95;
     z-index: 1;
   }
+  img {
+    width: 6em;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
   button.close {
     position: absolute;
     border: none;

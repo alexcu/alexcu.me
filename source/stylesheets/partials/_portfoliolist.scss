@@ -1,7 +1,14 @@
 ul.portfolio > li {
   width: 13.5em;
+  display: flex;
+
   figure figcaption {
     white-space: nowrap;
+  }
+  figure img {
+    width: 70%;
+    float: right;
+    margin-bottom: 1em;
   }
   @include mobile-layout-only {
     align-self: flex-start;
@@ -22,5 +29,6 @@ ul.portfolio > li {
   }
   a {
     color: #000;
+    align-self: flex-end;
   }
 }
