@@ -1,24 +1,24 @@
 angularjs:
   text: AngularJS
-  href: http://
-css3:
-  text: CSS3 and SCSS
-  href: http://
+  href: https://angularjs.org
+sass:
+  text: SASS
+  href: http://sass-lang.com
 apple:
   text: Objective-C
-  href: http://
+  href: https://developer.apple.com
 node:
   text: Node.js
-  href: http://
+  href: https://nodejs.org
 rails:
   text: Ruby on Rails
-  href: http://
+  href: http://rubyonrails.org
 bootstrap:
-  text: Bootstrap 3
-  href: http://
+  text: Bootstrap
+  href: http://getbootstrap.com
 coffeescript:
   text: CoffeeScript
-  href: http://
+  href: http://coffeescript.org
 middleman:
   text: Middleman
-  href: http://
+  href: https://middlemanapp.com
