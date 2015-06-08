@@ -7,21 +7,19 @@ article
         - key = key.split('_').last
         a id="#modal-#{key}-src" href="#modal-#{key}"
           figure
-            img src="/images/portfolio/#{key}.svg"
+            img src="/images/portfolio/#{key}/logo.svg"
             figcaption= link.text
         dialog.modal.gallery id="modal-#{key}"
           button.close &times;
           article
             header
-              img src="/images/portfolio/#{key}.svg"
+              img src="/images/portfolio/#{key}/logo.svg"
               h1= link.text
               p= link.tagline
             ul
-              li
-              li
-              li
-              li
-              li
-              li
+              - portfolio_gallery(key).each do |img|
+                li
+                  img alt="#{img[:alt]}" src="#{img[:src]}"
+                  p= img[:src]
             footer
               a href="" Learn More

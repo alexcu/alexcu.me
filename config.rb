@@ -48,6 +48,17 @@ helpers do
   def markdownify(src)
     Markdown.new(src).to_html
   end
+  def portfolio_gallery(portfolio_key)
+    keys = Dir.glob("./source/images/portfolio/#{portfolio_key}/*.png")
+    gallery = []
+    keys.each do | key |
+      gallery.push({
+        src: key.split('./source').last,
+        alt: key.split('/').last.gsub('-',' ').split('png').last.capitalize
+      })
+    end
+    gallery
+  end
 end
 
 set :css_dir, 'stylesheets'
