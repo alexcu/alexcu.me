@@ -3,10 +3,12 @@ body.modal {
 }
 
 dialog.modal {
-  position: absolute;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
   left: 0px;
   right: 0px;
-  height: 100%;
+  bottom: 0px;
   background-color: #fff;
   z-index: -1;
   opacity: 0;
@@ -19,6 +21,9 @@ dialog.modal {
     width: 6em;
     margin: 0 auto;
     margin-bottom: 2em;
+    @include mobile-layout-only {
+      display: none;
+    }
   }
   button.close {
     position: absolute;
@@ -32,6 +37,11 @@ dialog.modal {
 
     height: 3em;
     width: 3em;
+
+    @include mobile-layout-only {
+      width: 1.5em;
+      height: 1.5em;
+    }
 
     color: $dark-gray-color;
   }
