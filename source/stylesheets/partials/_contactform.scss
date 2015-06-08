@@ -13,6 +13,9 @@ form.contact {
   input, textarea {
     border: 1px solid $medium-gray-color;
     outline: none;
+    &:required:invalid {
+      border-color: #e0423d;
+    }
     &:hover, &:focus {
       border-color: darken($medium-gray-color, 20%);
     }

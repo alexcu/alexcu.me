@@ -2,5 +2,5 @@ h1 Alex Cummaudo
 h2 Software Engineer. Melbourne, Australia.
 ul
   - data.links.each do | key, link |
-    li class="#{key}"
-      a href="#{link.href}"= link.text
+    li
+      a style="background-image: url('/images/header/#{key}.svg');" href="#{link.href}"= link.text

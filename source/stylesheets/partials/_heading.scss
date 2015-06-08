@@ -64,12 +64,6 @@ body > header {
       background-repeat: no-repeat;
       text-indent: -9999px;
     }
-    // Logos
-    li.linkedin     a { @include linkedin-logo();     }
-    li.github       a { @include github-logo();       }
-    li.scriptogram  a { @include scriptogram-logo();  }
-    li.twitter      a { @include twitter-logo();      }
-    li.resume       a { @include resume-logo();       }
   }
 
   @include mobile-layout-only {
