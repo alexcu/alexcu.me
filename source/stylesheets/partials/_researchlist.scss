@@ -1,6 +1,6 @@
 ul.research {
   @include no-list-styles();
-  
+
   li {
     padding: 2em 0px;
     &:not(:last-child) {
@@ -35,5 +35,8 @@ ul.research {
   a:hover p.abstract {
     max-height: 999px;
     white-space: normal;
+  }
+  a:hover h2 {
+    color: $medium-blue-color;
   }
 }
