@@ -106,6 +106,7 @@ form.onsubmit = function () {
   for (var i = 0; i < els.length; i++) {
     els[i].dataset['dirty'] = "";
     if (!els[i].validity.valid) {
+      els[i].focus()
       return false;
     }
   }
