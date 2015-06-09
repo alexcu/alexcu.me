@@ -26,7 +26,8 @@ dialog.modal.gallery {
       //   cursor: -webkit-grabbing;
       // }
       white-space: nowrap;
-      overflow: auto;
+      overflow-x: scroll;
+      overflow-y: hidden;
       -webkit-padding-start: 0px;
       list-style: none;
       // Add momentum scrolling on mobile
