@@ -69,6 +69,10 @@ dialog.modal.gallery {
         width: 100%;
         box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
         margin-bottom: 1em;
+        @include medium-layout {
+          border: 0.5em solid #fff;
+          border-radius: 0.25em;
+        }
       }
       li p {
         font-size: 0.9em;
