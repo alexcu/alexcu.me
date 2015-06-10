@@ -146,6 +146,17 @@ function setupGalleryScrollPercent(modal) {
     // Update the progress
     var progressEl = modal.querySelector("progress");
     progressEl.value = percent;
+    var avgImageWidth = 0;
+    for (var i = 0; i < el.children.length - 1; i++) {
+      avgImageWidth += el.children[i].scrollWidth;
+    };
+    avgImageWidth /= el.children.length;
+    // Up to last element? Push down header
+    if (el.scrollLeft > ((el.children.length + 2) * avgImageWidth)) {
+      modal.querySelector("header").classList.add("expanded");
+    } else {
+      modal.querySelector("header").classList.remove("expanded");
+    }
   }
 }
 var galleryModalEls = document.querySelectorAll('dialog.modal.gallery');
