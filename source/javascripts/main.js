@@ -76,6 +76,7 @@ function setupModal(modalEl) {
   var srcAnchor = document.querySelector('a[href="#' + modalEl.id + '"]');
   srcAnchor.onclick = function() {
     document.querySelector('body').classList.add('modal');
+    modalEl.querySelector("ul").scrollLeft = 0;
   }
   // Setup close modal
   var closeEl = modalEl.querySelector('button.close');
