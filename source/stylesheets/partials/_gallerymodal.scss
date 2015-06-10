@@ -10,11 +10,26 @@ dialog.modal.gallery {
       align-content: flex-end;
       flex-wrap: wrap;
       margin-bottom: 1em;
+      top: 0px;
+      position: relative;
+      transition: top 1s ease;
       h1, p {
         width: 100%;
         margin: 0px;
         display: block;
         text-align: center;
+      }
+    }
+    header.expanded {
+      top: 20%;
+      @include tablet-layout {
+        top: 22%;
+      }
+      @include medium-layout {
+        top: 24%;
+      }
+      @include large-layout {
+        top: 29%;
       }
     }
     ul {
@@ -37,6 +52,7 @@ dialog.modal.gallery {
         display: none;
       }
       li {
+        vertical-align: middle;
         margin-top: 1em;
         margin-bottom: 1em;
         margin-right: 10em;
@@ -74,6 +90,17 @@ dialog.modal.gallery {
         }
       }
     }
+    li.viewmore a {
+      color: $medium-blue-color;
+      text-align: center;
+      display: block;
+      text-decoration: none;
+      font-size: 1.3em;
+      font-weight: $medium;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
     footer {
       width: 100%;
       flex: 0.8;
@@ -95,17 +122,6 @@ dialog.modal.gallery {
         }
         &::-webkit-progress-value {
           background-color: $medium-gray-color;
-        }
-      }
-      a {
-        color: $medium-blue-color;
-        text-align: center;
-        display: block;
-        text-decoration: none;
-        font-size: 1.3em;
-        font-weight: $medium;
-        &:hover {
-          text-decoration: underline;
         }
       }
     }
