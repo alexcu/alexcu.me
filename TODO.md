@@ -1,0 +1,2 @@
+- Fix the scroll view on iOS on gallery modals
+- Fix the heading push down on iOS
