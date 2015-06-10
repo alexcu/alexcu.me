@@ -163,3 +163,9 @@ var galleryModalEls = document.querySelectorAll('dialog.modal.gallery');
 for (var i = 0; i < galleryModalEls.length; i++) {
   setupGalleryScrollPercent(galleryModalEls[i]);
 };
+/**
+ * Remove modal from hash if loaded in with modal
+ */
+if (window.location.hash.indexOf("modal") != -1) {
+  window.location.hash = "";
+}
