@@ -20,5 +20,7 @@ article
                 li
                   img alt="#{img[:alt]}" src="#{img[:src]}"
                   p= img[:alt]
+              li.viewmore
+                a href="#{link.href}" Take a peek
             footer
-              a href="#{link.href}" Take a peek
+              progress max=1 value=0

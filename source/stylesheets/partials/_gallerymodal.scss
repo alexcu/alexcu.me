@@ -9,6 +9,7 @@ dialog.modal.gallery {
       display: flex;
       align-content: flex-end;
       flex-wrap: wrap;
+      margin-bottom: 1em;
       h1, p {
         width: 100%;
         margin: 0px;
@@ -17,7 +18,6 @@ dialog.modal.gallery {
       }
     }
     ul {
-      flex: 4;
       // // grab
       // cursor: grab;
       // cursor: -webkit-grab;
@@ -77,6 +77,26 @@ dialog.modal.gallery {
     footer {
       width: 100%;
       flex: 0.8;
+      text-align: center;
+      progress {
+        width: 40%;
+        margin-top: 1em;
+
+        // restyle the progress bar
+        -webkit-appearance: none;
+        appearance: none;
+
+        &::-webkit-progress-bar, &::-webkit-progress-value {
+          height: 2px;
+          border-radius: 2px;
+        }
+         &::-webkit-progress-bar {
+          background-color: $light-gray-color;
+        }
+        &::-webkit-progress-value {
+          background-color: $medium-gray-color;
+        }
+      }
       a {
         color: $medium-blue-color;
         text-align: center;

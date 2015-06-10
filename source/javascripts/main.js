@@ -135,3 +135,19 @@ form.onsubmit = function () {
   xhr.send(formData);
   return false;
 };
+/**
+ * Percent update on modal gallery scroll
+ */
+function setupGalleryScrollPercent(modal) {
+  var el = modal.querySelector("ul");
+  el.onscroll = function () {
+    var percent = el.scrollLeft / (el.scrollWidth - el.clientWidth);
+    // Update the progress
+    var progressEl = modal.querySelector("progress");
+    progressEl.value = percent;
+  }
+}
+var galleryModalEls = document.querySelectorAll('dialog.modal.gallery');
+for (var i = 0; i < galleryModalEls.length; i++) {
+  setupGalleryScrollPercent(galleryModalEls[i]);
+};
