@@ -21,18 +21,19 @@ dialog.modal.gallery {
       }
     }
     header.expanded {
-      top: 20%;
+      top: 7em;
       @include tablet-layout {
-        top: 22%;
+        top: 9em;
       }
       @include medium-layout {
-        top: 24%;
+        top: 11em;
       }
       @include large-layout {
-        top: 29%;
+        top: 13em;
       }
     }
     ul {
+      flex: 4;
       // // grab
       // cursor: grab;
       // cursor: -webkit-grab;
