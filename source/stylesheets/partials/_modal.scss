@@ -13,9 +13,14 @@ dialog.modal {
   opacity: 0;
   z-index: -1;
   transition: opacity 1s ease;
+  border: none;
+  width: auto;
+  height: auto;
+  padding: 0px;
   &:target {
     opacity: 1;
     z-index: 1;
+    display: block;
   }
   button.close {
     position: absolute;
