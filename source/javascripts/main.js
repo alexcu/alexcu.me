@@ -111,6 +111,15 @@ form.onsubmit = function () {
       return false;
     }
   }
+
+  // Hide send and show progress
+  var progressEl = form.querySelector('progress');
+  var sendEl     = form.querySelector('input[type="submit"]');
+
+  progressEl.style.visibility = "visible";
+  sendEl.style.visibility = "hidden";
+  sendEl.enabled = false;
+
   var xhr = new XMLHttpRequest();
   var formData = new FormData(form);
   xhr.open('POST', 'https://cryptic-stream-5488.herokuapp.com/ ', true);
@@ -123,6 +132,9 @@ form.onsubmit = function () {
       statusEl.style.zindex = 0;
       if (success) {
           form.reset();
+          progressEl.style.visibility = "hidden";
+          sendEl.style.visibility = "visible";
+          sendEl.enabled = true;
           for (var i = 0; i < els.length; i++) {
             delete els[i].dataset['dirty'];
           }
@@ -139,7 +151,7 @@ form.onsubmit = function () {
 /**
  * Percent update on modal gallery scroll
  */
-function setupGalleryScrollPercent(modal) {
+function setupGallery(modal) {
   var el = modal.querySelector("ul");
   el.onscroll = function () {
     var percent = el.scrollLeft / (el.scrollWidth - el.clientWidth);
@@ -154,10 +166,17 @@ function setupGalleryScrollPercent(modal) {
       modal.querySelector("header").classList.remove("expanded");
     }
   }
+  // Portrait images add class to images
+  var imgs = el.querySelectorAll("img");
+  for (var i = 0; i < imgs.length; i++) {
+    if (imgs[i].width < imgs[i].height) {
+      imgs[i].classList.add("portrait");
+    }
+  };
 }
 var galleryModalEls = document.querySelectorAll('dialog.modal.gallery');
 for (var i = 0; i < galleryModalEls.length; i++) {
-  setupGalleryScrollPercent(galleryModalEls[i]);
+  setupGallery(galleryModalEls[i]);
 };
 /**
  * Remove modal from hash if loaded in with modal

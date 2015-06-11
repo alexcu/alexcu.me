@@ -74,6 +74,10 @@ dialog.modal.gallery {
           border: 0.5em solid #fff;
           border-radius: 0.25em;
         }
+        &.portrait {
+          width: auto;
+          max-height: 45%;
+        }
       }
       li p {
         font-size: 0.9em;

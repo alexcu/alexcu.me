@@ -27,15 +27,18 @@ form.contact {
     text-align: center;
     color: $dark-gray-color;
   }
-  input {
+  input, progress {
     display: block;
     width: 100%;
   }
   label {
     display: none;
   }
+  progress {
+    visibility: hidden;
+  }
   @include medium-layout {
-    input, label {
+    input:not([type="submit"]), label {
       display: inline-block;
     }
     input:not([type="submit"]) {
