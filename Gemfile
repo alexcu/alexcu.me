@@ -5,6 +5,9 @@ source 'https://rubygems.org'
 gem "middleman", "~>3.3.12"
 gem "slim", ">= 2.0"
 
+# Deploy pligin
+gem 'middleman-deploy', '~> 0.2.4'
+
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 

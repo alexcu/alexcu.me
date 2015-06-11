@@ -85,3 +85,14 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+# middleman-deploy configuration
+activate :deploy do |deploy|
+  # Automatically run `middleman build` during `middleman deploy`
+  deploy.build_before = true
+  # rsync, ftp, sftp, or git
+  deploy.method = :rsync
+  deploy.host   = '128.199.85.236'
+  deploy.path   = '/home/alexcu/alexcu.me/public_html/'
+  deploy.user   = 'alexcu'
+end
