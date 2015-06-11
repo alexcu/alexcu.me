@@ -184,3 +184,10 @@ for (var i = 0; i < galleryModalEls.length; i++) {
 if (window.location.hash.indexOf("modal") != -1) {
   window.location.hash = "";
 }
+/**
+ * All external hyperlinks open in blank target
+ */
+var externalHyperlinkEls = document.querySelectorAll('a[href^="http"]');
+for (var i = 0; i < externalHyperlinkEls.length; i++) {
+  externalHyperlinkEls[i].target = "_blank";
+};
