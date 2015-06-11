@@ -1,2 +1,2 @@
-- Fix the scroll view on iOS on gallery modals
-- Fix the heading push down on iOS
+- Fix the scroll view scrollbar showing on iOS on gallery modals
+- Fix modal body scroll in iOS
