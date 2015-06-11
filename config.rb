@@ -49,12 +49,12 @@ helpers do
     Markdown.new(src).to_html
   end
   def portfolio_gallery(portfolio_key)
-    keys = Dir.glob("./source/images/portfolio/#{portfolio_key}/*.png")
+    keys = Dir.glob("./source/images/portfolio/#{portfolio_key}/*.jpg")
     gallery = []
     keys.each do | key |
       gallery.push({
         src: key.split('./source').last,
-        alt: key.split('/').last.split('png').last.split(/\d+\./).last
+        alt: key.split('/').last.split('jpg').last.split(/\d+\./).last
       })
     end
     gallery
