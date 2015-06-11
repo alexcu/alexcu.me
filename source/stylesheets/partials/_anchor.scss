@@ -1,3 +1,7 @@
 :not(p) > a {
   -webkit-tap-highlight-color: transparent;
 }
+
+a:hover, a:active, a:focus {
+  outline: 0px;
+}
