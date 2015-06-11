@@ -183,6 +183,7 @@ for (var i = 0; i < galleryModalEls.length; i++) {
  */
 if (window.location.hash.indexOf("modal") != -1) {
   window.location.hash = "";
+  document.querySelector('body').classList.remove('modal');
 }
 /**
  * All external hyperlinks open in blank target
