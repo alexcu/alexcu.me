@@ -77,6 +77,9 @@ dialog.modal.gallery {
       li p {
         font-size: 0.9em;
         font-style: oblique;
+        width: 80%;
+        white-space: normal;
+        margin: 0 auto;
       }
       li:last-child {
         margin-right: 0px;
@@ -97,12 +100,16 @@ dialog.modal.gallery {
     li.viewmore a {
       color: $medium-blue-color;
       text-align: center;
-      display: block;
       text-decoration: none;
       font-size: 1.3em;
       font-weight: $medium;
+      border: 2px solid $medium-blue-color;
+      border-radius: 0.25em;
+      padding: 0.75ex 1.5ex;
+      transition: padding 0.25s ease;
       &:hover {
         text-decoration: underline;
+        padding: 1.25ex 2ex;
       }
     }
     footer {
