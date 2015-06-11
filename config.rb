@@ -54,7 +54,7 @@ helpers do
     keys.each do | key |
       gallery.push({
         src: key.split('./source').last,
-        alt: key.split('/').last.gsub('-',' ').split('png').last.capitalize
+        alt: key.split('/').last.split('png').last.split(/\d+\./).last
       })
     end
     gallery
