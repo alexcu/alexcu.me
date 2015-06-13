@@ -1,6 +1,6 @@
 header: Nice to meet you...
 photo:
-  src: /images/me.png
+  src: /images/me.jpg
   alt: "(Yup, that's me!)"
 body: |
   I'm Alex, a 20-something Software Engineer from (sunny?) [Melbourne, Australia](http://wikipedia.org/en/Melbourne). I currently study Computer Science at [Swinburne University](http://swin.edu.au/).
