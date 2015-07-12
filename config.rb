@@ -26,9 +26,16 @@ require "slim"
 #   page "/admin/*"
 # end
 
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
-#  :which_fake_page => "Rendering a fake page with a local variable" }
+# Proxy pages
+data.portfolio.each do | key, project |
+  proxy "/demos/#{key}.html", "/templates/demo-redirect.html",
+    locals: {
+      redirect_url: project.demo || project.href,
+      has_demo:     project.demo.nil?,
+      project:      project,
+      project_key:  key
+    }
+end
 
 ###
 # Helpers
@@ -38,9 +45,9 @@ require "slim"
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
 
 # Methods defined in the helpers block are available in templates
 require "redcarpet/compat"
@@ -68,13 +75,18 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+activate :directory_indexes
+
+# Ignore templates
+ignore "/templates/*"
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
   # activate :asset_hash
