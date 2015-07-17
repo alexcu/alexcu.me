@@ -64,7 +64,7 @@ function touchFriendly (anchorEl) {
   }
   anchorEl.onclick = firstTap;
 }
-var anchorEls = document.querySelectorAll(':not(p) > a[href^="http"]');
+var anchorEls = document.querySelectorAll('a[href^="http"]');
 for (var i = 0; i < anchorEls.length; i++) {
   touchFriendly(anchorEls[i]);
 };
