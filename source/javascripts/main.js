@@ -1,3 +1,6 @@
+//= require jquery/dist/jquery
+//= require jquery-mousewheel/jquery.mousewheel
+
 /**
  * Sets up hoverables for header
  * @param headerTagline The tagline to change
@@ -153,7 +156,6 @@ form.onsubmit = function () {
  */
 function setupGallery(modal) {
   var el = modal.querySelector("ul");
-  el.on
   el.onscroll = function () {
     var percent = el.scrollLeft / (el.scrollWidth - el.clientWidth);
     // Update the progress
@@ -174,6 +176,13 @@ function setupGallery(modal) {
       imgs[i].classList.add("portrait");
     }
   };
+  // Horizontal scrolling!
+  $(function() {
+    $(el).mousewheel(function(event, delta) {
+      this.scrollLeft -= (delta * 5);
+      // event.preventDefault();
+    });
+  });
 }
 var galleryModalEls = document.querySelectorAll('dialog.modal.gallery');
 for (var i = 0; i < galleryModalEls.length; i++) {
