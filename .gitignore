@@ -19,3 +19,6 @@
 
 # Ignore rbenv local ruby version
 .ruby-version
+
+# Ignore vendor directory
+vendor

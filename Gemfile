@@ -22,3 +22,6 @@ gem "middleman-autoprefixer", "~> 2.4.3"
 
 # Middleman redcarpet
 gem "redcarpet", "~> 3.2.3"
+
+# Add Bower to Middleman
+gem "middleman-bower"

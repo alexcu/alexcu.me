@@ -1,0 +1,29 @@
+{
+  "name": "alexcu.me",
+  "version": "1.0.0",
+  "homepage": "https://github.com/alexcu-/alexcu.me",
+  "description": "My personal website, middlemanified",
+  "main": "source/index.html.slim",
+  "keywords": [
+    "website",
+    "personal",
+    "alex",
+    "cummaudo",
+    "alexcu.me"
+  ],
+  "authors": [
+    "Alex Cummaudo <alexcu@me.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "jquery-mousewheel": "~3.1.13"
+  }
+}
