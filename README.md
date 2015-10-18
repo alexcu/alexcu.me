@@ -2,7 +2,7 @@
 
 My new personal website, middlemanified
 
-# Intentions
+## Intentions
 
 A single, one-page website ([following KISS](https://en.wikipedia.org/wiki/KISS_principle)) to detail:
 
@@ -15,7 +15,7 @@ A single, one-page website ([following KISS](https://en.wikipedia.org/wiki/KISS_
 
 Host my blog using [Ghost](https://ghost.org); why re-invent the wheel?
 
-# Workflow
+## Workflow
 
 Get started by running:
 
@@ -36,6 +36,6 @@ And when you're done, deploy with:
 $ bundle exec middleman deploy
 ```
 
-# TODOs
+## TODOs
 
 - Fix the scroll view scrollbar showing on iOS on gallery modals
