@@ -14,7 +14,7 @@
   "authors": [
     "Alex Cummaudo <alexcu@me.com>"
   ],
-  "license": "MIT",
+  "license": "none",
   "ignore": [
     "**/.*",
     "node_modules",

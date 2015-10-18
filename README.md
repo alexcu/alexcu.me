@@ -39,3 +39,7 @@ $ bundle exec middleman deploy
 ## TODOs
 
 - Fix the scroll view scrollbar showing on iOS on gallery modals
+
+## License
+
+None. Copyright &copy; 2015 Alex Cummaudo. All rights reserved.
