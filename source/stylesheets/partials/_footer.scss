@@ -4,4 +4,14 @@ body > footer {
   text-align: center;
   color: $medium-gray-color;
   height: 4em;
+  a {
+    margin: 0 0.5ex;
+    text-decoration: none;
+    &, &:visited {
+      color: $medium-gray-color;
+    }
+    &:hover {
+      color: $dark-gray-color;
+    }
+  }
 }
