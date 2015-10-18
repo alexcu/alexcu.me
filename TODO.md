@@ -1,2 +1,0 @@
-- Fix the scroll view scrollbar showing on iOS on gallery modals
-- Fix modal body scroll in iOS
