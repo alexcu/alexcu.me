@@ -62,7 +62,7 @@ helpers do
       {
         idx: idx,
         src: key[/images\/.+/],
-        alt: key[/[A-Z].+(?=.jpg)/] || "Image " << idx.to_s
+        alt: key[/[A-Z].+(?=.jpg)/]
       }
     }.sort_by { |key| key[:idx]  }
   end
