@@ -57,14 +57,14 @@ helpers do
   end
   def portfolio_gallery(portfolio_key)
     keys = Dir.glob("./source/images/portfolio/#{portfolio_key}/*.jpg")
-    gallery = []
-    keys.each do | key |
-      gallery.push({
-        src: key.split('./source').last,
-        alt: key.split('/').last.split('jpg').last.split(/\d+\./).last
-      })
-    end
-    gallery
+    keys.map { |key|
+      idx = key[/\d+(?=\.\s?)/].to_i
+      {
+        idx: idx,
+        src: key[/images\/.+/],
+        alt: key[/[A-Z].+(?=.jpg)/] || "Image " << idx.to_s
+      }
+    }.sort_by { |key| key[:idx]  }
   end
 end
 
