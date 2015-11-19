@@ -4,9 +4,9 @@ angularjs:
 sass:
   text: Sass
   href: http://sass-lang.com
-apple:
-  text: Objective-C
-  href: https://developer.apple.com
+swift:
+  text: Swift
+  href: https://developer.apple.com/swift
 node:
   text: Node.js
   href: https://nodejs.org
