@@ -76,6 +76,9 @@ for (var i = 0; i < anchorEls.length; i++) {
 function setupModal(modalEl) {
   // Add modal class to body
   var srcAnchor = document.querySelector('a[href="#' + modalEl.id + '"]');
+  if (srcAnchor == null) {
+    return;
+  }
   srcAnchor.onclick = function() {
     document.querySelector('body').classList.add('modal');
     modalEl.querySelector("ul").scrollLeft = 0;
