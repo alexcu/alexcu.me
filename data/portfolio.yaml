@@ -1,7 +1,7 @@
 doubtfire:
+  text:     Doubtfire LMS
   href:     http://github.com/doubtfire-lms/
-  text:     Doubtfire Learning System
-  tagline:  A progress tracker for both teachers and students
+  tagline:  A lightweight, modern learning management system
 seekapp:
   text:     SEEK.com.au iOS App
   tagline:  Work contributed to the SEEK.com.au flagship app
