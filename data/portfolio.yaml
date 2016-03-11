@@ -2,6 +2,11 @@ doubtfire:
   href:     http://github.com/doubtfire-lms/
   text:     Doubtfire Learning System
   tagline:  A progress tracker for both teachers and students
+seekapp:
+  text:     SEEK.com.au App
+  tagline:  Work contributed to the SEEK.com.au flagship app
+  href:     https://itunes.apple.com/us/app/seek-jobs/id520400855?mt=8
+  direct:   true
 falcon:
   text:     Falcon Drone System
   tagline:  Falcon automatically flys drones without human intervention

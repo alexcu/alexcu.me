@@ -5,7 +5,7 @@ article
     - data.portfolio.each do | key, link |
       li
         - key = key.split('_').last
-        a id="#modal-#{key}-src" href="#modal-#{key}"
+        a id="#modal-#{key}-src" href="#{link.direct ? link.href : ('#modal-' << key)}" target="#{link.direct ? '_blank' : ''}"
           figure
             img src="/images/portfolio/#{key}/logo.svg"
             figcaption= link.text
