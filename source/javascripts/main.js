@@ -162,7 +162,8 @@ function setupGallery(modal) {
     progressEl.value = percent;
     // How much one image is in pct (#children - last element)
     var oneImgPct = 1 / (el.children.length);
-    if (percent > (1 - (oneImgPct * 0.15))) {
+    var hasViewMore = el.querySelector('li.viewmore');
+    if (percent > (1 - (oneImgPct * 0.15)) && hasViewMore) {
       modal.querySelector("header").classList.add("expanded");
     } else {
       modal.querySelector("header").classList.remove("expanded");

@@ -1,18 +1,15 @@
 doubtfire:
-  href:     http://doubtfire.ict.swin.edu.au/
+  href:     http://github.com/doubtfire-lms/
   text:     Doubtfire Learning System
   tagline:  A progress tracker for both teachers and students
 falcon:
-  href:     http://ssil.com.au/projects/falcon/
   text:     Falcon Drone System
   tagline:  Falcon automatically flys drones without human intervention
-  demo:     http://128.199.142.243:9000/
+  href:     http://128.199.142.243:9000/
 ssilwebsite:
-  href:     http://ssil.com.au/
   text:     SSIL Website
   tagline:  Mobile responsive website to showcase SSIL's Work
 mbt:
-  href:     http://ssil.com.au/projects/mbt/
   text:     Bus Tracker Fleet Visualiser
   tagline:  Visualiser tracking buses in Kuala Lumpur
   demo:     http://128.199.176.11:9000/
