@@ -38,7 +38,13 @@ $ bundle exec middleman deploy
 
 ## TODOs
 
-- Fix the scroll view scrollbar showing on iOS on gallery modals
+[ ] Lazy load images using Base64 encoded placeholders, fade to loaded on open of modal
+[ ] Switch to Google CDN for font (faster than shipping)
+[ ] Fix referral using link with id
+[ ] Reduce size of the research section? Perhaps expand it out
+[ ] Frosted video header of code being written?
+[ ] Rethink the gallery. Vertical to horizontal scrollbar is icky
+[ ] Fix the scroll view scrollbar showing on iOS on gallery modals
 
 ## License
 
