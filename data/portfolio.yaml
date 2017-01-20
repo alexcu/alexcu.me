@@ -2,6 +2,12 @@ doubtfire:
   text:     Doubtfire LMS
   href:     http://github.com/doubtfire-lms/
   tagline:  A lightweight, modern learning management system
+  direct:   true
+splashkit:
+  text:     SplashKit SDK
+  href:     http://splashkit.io
+  tagline:  A beginner's all-purpose software toolkit.
+  direct:   true
 seekapp:
   text:     SEEK.com.au iOS App
   tagline:  Work contributed to the SEEK.com.au flagship app
