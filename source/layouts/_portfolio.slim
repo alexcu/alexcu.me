@@ -14,8 +14,8 @@ article
               p.tagline= link.tagline
               - unless link.time.nil?
                 p.time= link.time
-            .progress
-              progress max=1 value=0
+              .progress
+                progress max=1 value=0
             ul
               - portfolio_gallery(key).each do |img|
                 li

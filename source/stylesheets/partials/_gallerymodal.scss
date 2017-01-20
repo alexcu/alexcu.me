@@ -5,14 +5,13 @@ dialog.modal.gallery {
     display: flex;
     flex-direction: column;
     header {
-      flex: 1.5;
+      flex: 1;
       display: flex;
       align-content: flex-end;
       flex-wrap: wrap;
-      margin-bottom: 1em;
-      top: 0px;
+      margin-bottom: 2px;
       position: relative;
-      transition: top 1s ease;
+      transition: background-color 1s ease;
       h1, p {
         width: 100%;
         margin: 0px;
@@ -28,30 +27,18 @@ dialog.modal.gallery {
       }
     }
     header.expanded {
-      top: 7em;
-      z-index: 0;
-      position: relative;
-      @include tablet-layout {
-        top: 9em;
-      }
-      @include medium-layout {
-        top: 11em;
-      }
-      @include large-layout {
-        top: 13em;
-      }
+      box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+      background-color: rgba(255,255,255,0.8);
+    }
+    header.expanded + ul {
+      flex: 6;
     }
     ul {
-      // // grab
-      // cursor: grab;
-      // cursor: -webkit-grab;
-      // &:active {
-      //   cursor: grabbing;
-      //   cursor: -webkit-grabbing;
-      // }
+      transition: flex 1s ease;
+      flex: 2;
       white-space: nowrap;
-      overflow-x: scroll;
-      overflow-y: hidden;
+      overflow-x: hidden;
+      overflow-y: scroll;
       -webkit-padding-start: 0px;
       list-style: none;
       // Add momentum scrolling on mobile
@@ -62,11 +49,10 @@ dialog.modal.gallery {
       }
       li {
         vertical-align: middle;
-        margin-top: 1em;
-        margin-bottom: 1em;
-        margin-right: 10em;
-        display: inline-block;
+        height: 100%;
         width: 100%;
+        margin: 5em auto;
+        display: block;
       }
       li, li p {
         text-align: center;
@@ -97,7 +83,7 @@ dialog.modal.gallery {
         margin: 0 auto;
       }
       li:last-child {
-        margin-right: 0px;
+        margin-bottom: 20%;
       }
       // increase to 25% left when tablet
       @include tablet-layout {
@@ -130,7 +116,6 @@ dialog.modal.gallery {
     .progress {
       width: 100%;
       text-align: center;
-      flex: 0.8;
       progress {
         width: 40%;
         margin-top: 1em;

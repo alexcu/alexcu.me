@@ -81,7 +81,7 @@ function setupModal(modalEl) {
   }
   srcAnchor.onclick = function() {
     document.querySelector('body').classList.add('modal');
-    modalEl.querySelector("ul").scrollLeft = 0;
+    modalEl.querySelector("ul").scrollTop = 0;
   }
   // Setup close modal
   var closeEl = modalEl.querySelector('button.close');
@@ -159,14 +159,12 @@ form.onsubmit = function () {
 function setupGallery(modal) {
   var el = modal.querySelector("ul");
   el.onscroll = function () {
-    var percent = el.scrollLeft / (el.scrollWidth - el.clientWidth);
+    var percent = el.scrollTop / (el.scrollHeight - el.clientHeight);
     // Update the progress
     var progressEl = modal.querySelector("progress");
     progressEl.value = percent;
     // How much one image is in pct (#children - last element)
-    var oneImgPct = 1 / (el.children.length);
-    var hasViewMore = el.querySelector('li.viewmore');
-    if (percent > (1 - (oneImgPct * 0.15)) && hasViewMore) {
+    if (percent > 0) {
       modal.querySelector("header").classList.add("expanded");
     } else {
       modal.querySelector("header").classList.remove("expanded");
@@ -182,7 +180,7 @@ function setupGallery(modal) {
   // Horizontal scrolling!
   $(function() {
     $(el).mousewheel(function(event, delta) {
-      this.scrollLeft -= (delta * 5);
+      this.scrollTop -= (delta * 5);
       // event.preventDefault();
     });
   });
