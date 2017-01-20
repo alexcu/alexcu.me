@@ -1,4 +1,8 @@
 dialog.modal.gallery {
+  &, article, header, ul {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
   article {
     width: 100%;
     height: 100%;
@@ -31,18 +35,18 @@ dialog.modal.gallery {
       background-color: rgba(255,255,255,0.8);
     }
     header.expanded + ul {
-      flex: 6;
+      @include tablet-layout {
+        flex: 6;
+      }
     }
     ul {
       transition: flex 1s ease;
-      flex: 2;
+      @include tablet-layout {
+        flex: 2;
+      }
       white-space: nowrap;
-      overflow-x: hidden;
-      overflow-y: scroll;
       -webkit-padding-start: 0px;
       list-style: none;
-      // Add momentum scrolling on mobile
-      -webkit-overflow-scrolling: touch;
       // Hide scrollbar
       &::-webkit-scrollbar {
         display: none;

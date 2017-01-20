@@ -1,9 +1,13 @@
 body.modal {
   overflow: hidden;
+  @include mobile-layout-only {
+    position: fixed;
+  }
 }
 
 dialog.modal {
-  overflow: hidden;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   position: fixed;
   top: 0px;
   left: 0px;
