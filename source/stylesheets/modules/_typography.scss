@@ -1,81 +1,11 @@
 // Font weights
-$thin:    200;
+$thin:    300;
 $light:   300;
 $regular: 400;
 $medium:  500;
 $bold:    600;
 
-// Import Fira Sans
-@font-face {
-  src:          url('/fonts/FiraSans-Thin.otf');
-  font-family: 'Fira Sans';
-  font-style:   normal;
-  font-weight:  $thin;
-}
-
-@font-face {
-  src:          url('/fonts/FiraSans-ThinItalic.otf');
-  font-family: 'Fira Sans';
-  font-style:   italic;
-  font-weight:  $thin;
-}
-
-@font-face {
-  src:          url('/fonts/FiraSans-Light.otf');
-  font-family: 'Fira Sans';
-  font-style:   normal;
-  font-weight:  $light;
-}
-
-@font-face {
-  src:          url('/fonts/FiraSans-LightItalic.otf');
-  font-family: 'Fira Sans';
-  font-style:   italic;
-  font-weight:  $light;
-}
-
-@font-face {
-  src:          url('/fonts/FiraSans-Regular.otf');
-  font-family: 'Fira Sans';
-  font-style:   normal;
-  font-weight:  $regular;
-}
-
-
-@font-face {
-  src:          url('/fonts/FiraSans-Italic.otf');
-  font-family: 'Fira Sans';
-  font-style:   italic;
-  font-weight:  $regular;
-}
-
-@font-face {
-  src:          url('/fonts/FiraSans-Medium.otf');
-  font-family: 'Fira Sans';
-  font-style:   normal;
-  font-weight:  $medium;
-}
-
-@font-face {
-  src:          url('/fonts/FiraSans-MediumItalic.otf');
-  font-family: 'Fira Sans';
-  font-style:   italic;
-  font-weight:  $medium;
-}
-
-@font-face {
-  src:          url('/fonts/FiraSans-Bold.otf');
-  font-family: 'Fira Sans';
-  font-style:   normal;
-  font-weight:  $bold;
-}
-
-@font-face {
-  src:          url('/fonts/FiraSans-BoldItalic.otf');
-  font-family: 'Fira Sans';
-  font-style:   italic;
-  font-weight:  $bold;
-}
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:300,300italic,400,500,500italic,700italic);
 
 @mixin font-size($sizeValue: 1.6) {
   font-size: ($sizeValue * 10) + px;
