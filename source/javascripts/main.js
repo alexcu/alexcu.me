@@ -1,5 +1,3 @@
-//= require jquery-mousewheel/jquery.mousewheel
-
 /**
  * Sets up hoverables for header
  * @param headerTagline The tagline to change
@@ -68,7 +66,7 @@ function touchFriendly (anchorEl) {
 }
 var anchorEls = document.querySelectorAll('a[href^="http"]');
 for (var i = 0; i < anchorEls.length; i++) {
-  touchFriendly(anchorEls[i]);
+  //touchFriendly(anchorEls[i]);
 };
 /**
  * Sets up the modal
@@ -159,7 +157,7 @@ form.onsubmit = function () {
 function setupGallery(modal) {
   var el = modal.querySelector("ul");
   el.onscroll = function () {
-    var percent = el.scrollTop / (el.scrollHeight - el.clientHeight);
+    var percent = el.scrollTop / (el.scrollHeight - el.clientHeight + 1);
     // Update the progress
     var progressEl = modal.querySelector("progress");
     progressEl.value = percent;
@@ -177,13 +175,6 @@ function setupGallery(modal) {
       imgs[i].classList.add("portrait");
     }
   };
-  // Horizontal scrolling!
-  $(function() {
-    $(el).mousewheel(function(event, delta) {
-      this.scrollTop -= (delta * 5);
-      // event.preventDefault();
-    });
-  });
 }
 var galleryModalEls = document.querySelectorAll('dialog.modal.gallery');
 for (var i = 0; i < galleryModalEls.length; i++) {
@@ -192,7 +183,7 @@ for (var i = 0; i < galleryModalEls.length; i++) {
 /**
  * Remove modal from hash if loaded in with modal
  */
-if (window.location.hash.indexOf("modal") != -1) {
+if (window.location.hash.indexOf("modal") > 0) {
   window.location.hash = "";
   document.querySelector('body').classList.remove('modal');
 }
