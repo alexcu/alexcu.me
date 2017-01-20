@@ -19,6 +19,13 @@ dialog.modal.gallery {
         display: block;
         text-align: center;
       }
+      p.time {
+        font-size: 1.4rem;
+        color: lighten($dark-gray-color, 10%);
+        font-weight: 400;
+        margin-top: 1em;
+        text-transform: uppercase;
+      }
     }
     header.expanded {
       top: 7em;
