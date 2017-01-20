@@ -25,3 +25,6 @@ gem "redcarpet", "~> 3.2.3"
 
 # Add Bower to Middleman
 gem "middleman-bower"
+
+# Publish middleman website to gh-pages
+gem 'middleman-gh-pages', '~>0.3.0'
