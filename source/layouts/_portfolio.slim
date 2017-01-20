@@ -11,7 +11,9 @@ article
           article
             header
               h1= link.text
-              p= link.tagline
+              p.tagline= link.tagline
+              - unless link.time.nil?
+                p.time= link.time
             ul
               - portfolio_gallery(key).each do |img|
                 li
