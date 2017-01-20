@@ -127,10 +127,10 @@ dialog.modal.gallery {
         padding: 1.25ex 2ex;
       }
     }
-    footer {
+    .progress {
       width: 100%;
-      flex: 0.8;
       text-align: center;
+      flex: 0.8;
       progress {
         width: 40%;
         margin-top: 1em;

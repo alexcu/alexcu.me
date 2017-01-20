@@ -14,6 +14,8 @@ article
               p.tagline= link.tagline
               - unless link.time.nil?
                 p.time= link.time
+            .progress
+              progress max=1 value=0
             ul
               - portfolio_gallery(key).each do |img|
                 li
@@ -22,5 +24,3 @@ article
               - unless link.href.nil?
                 li.viewmore
                   a href="#{link.href}" Take a peek
-            footer
-              progress max=1 value=0
