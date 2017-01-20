@@ -80,12 +80,6 @@ activate :directory_indexes
 # Ignore templates
 ignore "/templates/*"
 
-# Add bower activation
-activate :bower
-
-# Import jQuery
-sprockets.import_asset 'jquery'
-
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
