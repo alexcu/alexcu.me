@@ -1,5 +1,15 @@
 title:  Balancing Design with Performance - An Assessment of Class Coupling in Object-Oriented Languages
 date:   November 2013
-href:   https://www.dropbox.com/s/wad8x26xebo4tjv/2013-S2-ResearchPaper.pdf?dl=1
+href:   http://stuff.alexcu.me/swin/research/Class Coupling and Performance Assessment.pdf
 abstract: >
-  Model-View-Controller decouples abstracted classifications from any form of their representation and interaction by use of Observer and Mediator design patterns. However, do developers sacrifice performance for these complex designs? If performance is affected when classes are mediated by a Controller, or coupled when not, is this also the case when the language changes? By implementing simple systems that reflected decoupled and coupled designs in two different languages, it was found that performance generally improves in coupled designs, albeit with some variations depending on language and metric. Results emphasised that coupled designs may be viable when efficiency is paramount, although the benefits of flexibility and modularity are certainly forgone by doing so.
+  Model-View-Controller decouples abstracted classifications from any form of
+  their representation and interaction by use of Observer and Mediator design
+  patterns. However, do developers sacrifice performance for these complex
+  designs? If performance is affected when classes are mediated by a Controller,
+  or coupled when not, is this also the case when the language changes? By
+  implementing simple systems that reflected decoupled and coupled designs in
+  two different languages, it was found that performance generally improves in
+  coupled designs, albeit with some variations depending on language and metric.
+  Results emphasised that coupled designs may be viable when efficiency is
+  paramount, although the benefits of flexibility and modularity are certainly
+  forgone by doing so.

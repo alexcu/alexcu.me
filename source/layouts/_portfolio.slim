@@ -1,14 +1,11 @@
 header
-  h1 ...and with them I've created...
+  h1 ...and using them I've worked on...
 article
   ul.columnized.portfolio
     - data.portfolio.each do | key, link |
       li
         - key = key.split('_').last
-        a id="#modal-#{key}-src" href="#modal-#{key}"
-          figure
-            img src="/images/portfolio/#{key}/logo.svg"
-            figcaption= link.text
+        a id="#modal-#{key}-src" href="#{link.direct ? link.href : ('#modal-' << key)}" target="#{link.direct ? '_blank' : ''}" style="background-image:url('/images/portfolio/#{key}/logo.svg')"= link.text
         dialog.modal.gallery id="modal-#{key}"
           button.close &times;
           article
@@ -20,7 +17,8 @@ article
                 li
                   img alt="#{img[:alt]}" src="#{img[:src]}"
                   p= img[:alt]
-              li.viewmore
-                a href="#{link.href}" Take a peek
+              - unless link.href.nil?
+                li.viewmore
+                  a href="#{link.href}" Take a peek
             footer
               progress max=1 value=0

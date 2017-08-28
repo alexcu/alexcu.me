@@ -1,5 +1,14 @@
 title:  Evaluating The Learnability of Programming Languages
 date:   June 2013
-href:   https://www.dropbox.com/s/0x8r6hmu2ke9312/2013-S1-ResearchPaper.pdf?dl=1
+href:   http://stuff.alexcu.me/swin/research/Learnability of Programming.pdf
 abstract: >
-  Learning programming for problem-solving purposes allow for programming concepts to solve problems via a variety of different tools, or programming languages. However, what happens when one familiar tool is replaced with another—if the problem is familiar and easily solvable with one tool, is this the case with another? By observing an intermediate programmer's ability to learn, it was found that if these concepts are well known, adapting them to another language is not difficult. A survey, which measured the participant's confidence in the language afterwards, suggested that most programmers themselves find little difficulty in learning a language, emphasising that languages are not as difficult to learn as some think to be.
+  Learning programming for problem-solving purposes allow for programming
+  concepts to solve problems via a variety of different tools, or programming
+  languages. However, what happens when one familiar tool is replaced with
+  another—if the problem is familiar and easily solvable with one tool, is
+  this the case with another? By observing an intermediate programmer's ability
+  to learn, it was found that if these concepts are well known, adapting them
+  to another language is not difficult. A survey, which measured the
+  participant's confidence in the language afterwards, suggested that most
+  programmers themselves find little difficulty in learning a language,
+  emphasising that languages are not as difficult to learn as some think to be.

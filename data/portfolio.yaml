@@ -1,18 +1,20 @@
 doubtfire:
-  href:     http://doubtfire.ict.swin.edu.au/
-  text:     Doubtfire Learning System
-  tagline:  A progress tracker for both teachers and students
+  text:     Doubtfire LMS
+  href:     http://github.com/doubtfire-lms/
+  tagline:  A lightweight, modern learning management system
+seekapp:
+  text:     SEEK.com.au iOS App
+  tagline:  Work contributed to the SEEK.com.au flagship app
+  href:     https://itunes.apple.com/us/app/seek-jobs/id520400855?mt=8
+  direct:   true
 falcon:
-  href:     http://ssil.com.au/projects/falcon/
   text:     Falcon Drone System
   tagline:  Falcon automatically flys drones without human intervention
-  demo:     http://128.199.142.243:9000/
+  href:     http://128.199.142.243:9000/
 ssilwebsite:
-  href:     http://ssil.com.au/
   text:     SSIL Website
   tagline:  Mobile responsive website to showcase SSIL's Work
 mbt:
-  href:     http://ssil.com.au/projects/mbt/
   text:     Bus Tracker Fleet Visualiser
   tagline:  Visualiser tracking buses in Kuala Lumpur
   demo:     http://128.199.176.11:9000/
