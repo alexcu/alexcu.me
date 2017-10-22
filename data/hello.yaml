@@ -1,11 +1,11 @@
 header: Nice to meet you...
 photo:
-  src: /images/me.jpg
-  alt: "(Yup, that's me!)"
+  src: /images/japan.jpg
+  alt: "Senjogahara Marshlands, Japan"
 body: |
   I'm Alex, a full-stack software engineer from [Melbourne, Australia](http://wikipedia.org/en/Melbourne). I currently work under the [Deakin Software and Technology Innovation Laboratory](http://www.deakin.edu.au/information-technology/dstil) as a postgraduate research student.
 
-  With industry experience in the education, research and commercial sectors, I have worked on writing iOS and web applications, RESTful APIs and low-level SDKs in varying domains. I also love open source software and contribute to several open source projects in computer science education. I'm currently [investigating](http://deakin.edu.au/~ca/alphanum) image processing using artificial intellgence models and developing data engineering pipelines.
+  With industry experience in the education, research and commercial sectors, I have worked on writing iOS and web applications, RESTful APIs and low-level SDKs in varying domains. I also love open source software and contribute to several [open source projects](http://github.com/doubtfire-lms) in [computer science education](http://github.com/splashkit). I'm currently [investigating](http://deakin.edu.au/~ca/alphanum) image processing using artificial intellgence models and developing data engineering pipelines.
 
   When I'm not busy coding, you can find me hiking outdoors, reading up the latest tech, or out saving 80s and 90s Macs from certain destruction!
 

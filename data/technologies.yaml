@@ -5,7 +5,7 @@ node:
   text: Node.js
   href: https://nodejs.org
 rails:
-  text: Ruby on Rails
+  text: Ruby
   href: http://rubyonrails.org
 sass:
   text: Sass
@@ -19,6 +19,6 @@ bootstrap:
 middleman:
   text: Middleman
   href: https://middlemanapp.com
-coffeescript:
-  text: CoffeeScript
-  href: http://coffeescript.org
+python:
+  text: Python
+  href: http://python.org
