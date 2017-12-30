@@ -4,3 +4,6 @@
 [submodule "resume"]
 	path = resume
 	url = git@github.com:alexcu/resume.git
+[submodule "blog"]
+	path = blog
+	url = git@github.com:alexcu/blog.alexcu.me.git
