@@ -5,6 +5,10 @@ body.modal {
   }
 }
 
+body:not(.modal) dialog.modal {
+  display: none;
+}
+
 dialog.modal {
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
@@ -17,7 +21,6 @@ dialog.modal {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   opacity: 0;
-  z-index: -1;
   transition: opacity 1s ease;
   border: none;
   width: auto;
