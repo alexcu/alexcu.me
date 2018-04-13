@@ -28,13 +28,13 @@ require "slim"
 
 # Proxy pages
 data.portfolio.each do | key, project |
-  proxy "/demos/#{key}.html", "/templates/demo-redirect.html",
-    locals: {
-      redirect_url: project.demo || project.href,
-      has_demo:     project.demo.nil?,
-      project:      project,
-      project_key:  key
-    }
+  # proxy "/demos/#{key}.html", "/templates/demo-redirect.html",
+  #   locals: {
+  #     redirect_url: project.demo || project.href,
+  #     has_demo:     project.demo.nil?,
+  #     project:      project,
+  #     project_key:  key
+  #   }
 end
 
 ###
