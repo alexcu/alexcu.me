@@ -5,9 +5,6 @@ source 'https://rubygems.org'
 gem "middleman", "~>3.3.12"
 gem "slim", ">= 2.0"
 
-# Deploy pligin
-gem 'middleman-deploy', '~> 0.2.4'
-
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
@@ -25,6 +22,3 @@ gem "redcarpet", "~> 3.2.3"
 
 # Add Bower to Middleman
 gem "middleman-bower"
-
-# Publish middleman website to gh-pages
-gem 'middleman-gh-pages', '~>0.3.0'
