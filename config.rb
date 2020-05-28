@@ -33,7 +33,7 @@ data.opengraph.each do | key, project |
     locals: {
       title:  project.title,
       type:   "website",
-      image:  "https://alexcu.me/images/og/#{key}.jpg",
+      image:  "https://alexcu.me/images/og/#{key}.png",
       og_url: project.url
     }
 end
