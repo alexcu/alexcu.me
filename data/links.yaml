@@ -2,6 +2,10 @@ linkedin:
   href: https://au.linkedin.com/in/alexcummaudo
   text: View LinkedIn Profile
 
+twitter:
+  href: http://twitter.com/AlexCummaudo
+  text: View Twitter Profile
+
 github:
   href: http://github.com/alexcu
   text: View GitHub Profile
@@ -10,14 +14,6 @@ sourcerer:
   href: https://sourcerer.io/alexcu
   text: View Sourcerer Profile
 
-twitter:
-  href: http://twitter.com/alexcu_
-  text: View Twitter Profile
-
-blog:
-  href: http://dstil.deakin.edu.au/author/alexcummaudo/
-  text: Read Blog Posts
-
 resume:
   href: http://alexcu.github.io/resume
-  text: Read Résumé
+  text: View Curriculum Vitae

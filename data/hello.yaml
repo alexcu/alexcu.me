@@ -1,14 +1,14 @@
 header: G'day! Nice to meet you...
 photo:
-  src: /images/japan.jpg
-  alt: "Senjogahara Marshlands, Japan"
+  src: /images/tassie.jpeg
+  alt: "Wellington Range, Tasmania"
 body: |
-  I'm Alex, a full-stack software engineer from [Melbourne, Australia](http://wikipedia.org/en/Melbourne). I currently work under the [Applied Artificial Intelligence Institute (A<sup>2</sup>I<sup>2</sup>)](https://www.deakin.edu.au/a2i2) as a research software engineer.
+  I'm Alex, a research software engineer from [Melbourne, Australia](http://wikipedia.org/en/Melbourne). I currently work under the [Applied Artificial Intelligence Institute](https://www.deakin.edu.au/a2i2) (A&sup2;I&sup2;) as a research software engineer.
 
-  With industry experience in the education, research and commercial sectors, I have worked on writing and deploying iOS and large-scale web applications, low-level SDKs with C/C++, and machine learning data processing with Python. At A<sup>2</sup>I<sup>2</sup>, I've been actively involved in R&D projects exploring an <a href="http://deakin.edu.au/~ca/alphanum">AI-based alphanumeric identification system</a> and building a surrounding end-to-end data engineering pipeline. Currently, I am pursuing a research doctorate in operationalising AI using software engineering practices for AI in business use.
+  With industry experience in the education, research and commercial sectors, I have worked on writing and deploying iOS and large-scale web applications, low-level SDKs with C/C++, and machine learning data processing with Python. At A&sup2;I&sup2;, I've been actively involved in R&D projects  such as building an <a href="http://deakin.edu.au/~ca/alphanum">AI-based alphanumeric identification system</a> and end-to-end data engineering pipelines. Currently, I am pursuing a research doctorate on improving software and AI integration for production systems.
 
-  I'm passionate about teaching programming as practically as possible, and have been doing so since 2014. I also love open source software and contribute to several open source projects in [computer science education](http://github.com/splashkit) and [higher education learning](http://github.com/doubtfire-lms). I also previously worked as a resident tutor of software engineering at [International House](http://ihouse.unimelb.edu.au/), a college of the [University of Melbourne](http://unimelb.edu.au/).
+  I'm passionate about teaching programming as practically as possible, and have been doing so since 2014. I also love open source software and contribute to several open source projects in [computer science education](https://splashkit.io) and [higher education learning](https://github.com/doubtfire-lms). I also previously worked as a resident tutor of software engineering at [International House](http://ihouse.unimelb.edu.au/), a college of the [University of Melbourne](http://unimelb.edu.au/).
 
-  When I'm not busy coding, you can find me hiking outdoors, reading up the latest tech, or out saving 80s and 90s Macs from certain destruction!
+  When I'm not busy tech'ing, you can find me hiking outdoors or [restoring 80s and 90s Macintoshes](https://www.instagram.com/p/B8VnDmhgdm-)!
 
-  Powered by green tea and coffee.
+  Powered by coffee.

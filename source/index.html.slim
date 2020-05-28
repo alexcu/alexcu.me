@@ -4,25 +4,9 @@ header
 section#hello.white
   =partial 'layouts/hello'
 
-section#technologies
-  =partial 'layouts/technologies'
-
-section#portfolio.white
-  =partial 'layouts/portfolio'
-
-section#research
-  =partial 'layouts/research'
-
-section#rocky.white
-  =partial 'layouts/rocky'
-
 section#contact
   =partial 'layouts/contact'
 
 footer
   | &copy; #{Time.new.year}.
   a href="#{data.links.github.href}/alexcu.me" Made in Melbourne
-  | using
-  a href="#{data.technologies.middleman.href}"Middleman
-  | and
-  a href="#{data.technologies.sass.href}"Sass.

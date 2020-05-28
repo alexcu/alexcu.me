@@ -16,7 +16,7 @@ require "slim"
 # Per-page layout changes:
 #
 # With no layout
-# page "/path/to/file.html", :layout => false
+page "/goto/*", :layout => false
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
@@ -26,15 +26,16 @@ require "slim"
 #   page "/admin/*"
 # end
 
-# Proxy pages
-data.portfolio.each do | key, project |
-  # proxy "/demos/#{key}.html", "/templates/demo-redirect.html",
-  #   locals: {
-  #     redirect_url: project.demo || project.href,
-  #     has_demo:     project.demo.nil?,
-  #     project:      project,
-  #     project_key:  key
-  #   }
+# Goto pages
+data.opengraph.each do | key, project |
+  pagename = key.gsub('_', '-')
+  proxy "/goto/#{pagename}.html", "/templates/opengraph-redirect.html",
+    locals: {
+      title:  project.title,
+      type:   "website",
+      image:  "https://alexcu.me/images/og/#{key}.jpg",
+      og_url: project.url
+    }
 end
 
 ###
@@ -46,7 +47,7 @@ end
 
 # Reload the browser automatically whenever files change
 configure :development do
-  activate :livereload
+  # activate :livereload
 end
 
 # Methods defined in the helpers block are available in templates
@@ -55,17 +56,17 @@ helpers do
   def markdownify(src)
     Markdown.new(src).to_html
   end
-  def portfolio_gallery(portfolio_key)
-    keys = Dir.glob("./source/images/portfolio/#{portfolio_key}/*.jpg")
-    keys.map { |key|
-      idx = key[/\d+(?=\.\s?)/].to_i
-      {
-        idx: idx,
-        src: key[/images\/.+/],
-        alt: key[/[A-Z].+(?=.jpg)/]
-      }
-    }.sort_by { |key| key[:idx]  }
-  end
+  # def portfolio_gallery(portfolio_key)
+  #   keys = Dir.glob("./source/images/portfolio/#{portfolio_key}/*.jpg")
+  #   keys.map { |key|
+  #     idx = key[/\d+(?=\.\s?)/].to_i
+  #     {
+  #       idx: idx,
+  #       src: key[/images\/.+/],
+  #       alt: key[/[A-Z].+(?=.jpg)/]
+  #     }
+  #   }.sort_by { |key| key[:idx]  }
+  # end
 end
 
 set :css_dir, 'stylesheets'

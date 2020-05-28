@@ -1,0 +1,52 @@
+phd_fse2020:
+  title: Beware the evolving ‘intelligent‘ web service! An integration architecture tactic to guard AI-first components
+  url: https://arxiv.org/pdf/2005.13186.pdf
+phd_icse2020:
+  title: Interpreting Cloud Computer Vision Pain-Points - A Mining Study of Stack Overflow
+  url: https://arxiv.org/pdf/2001.10130.pdf
+phd_icsme2019:
+  title: Losing Confidence in Quality - Unspoken Evolution of Computer Vision Services
+  url: https://arxiv.org/pdf/1906.07328.pdf
+phd_esem2019:
+  title: What should I document? A preliminary systematic mapping study into API documentation knowledge
+  url: https://arxiv.org/pdf/1907.13260.pdf
+
+hons_thesis:
+  title: Recognition and Prominence Ranking of Alphanumeric Number Sequences in Images
+  url: http://github.com/alexcu/honours-thesis/raw/final/thesis.pdf
+
+a2i2_argus:
+  title: Argus Data Tagging Tool
+  url: https://personal-sites.deakin.edu.au/~ca/argus/
+
+swin_aps:
+  title:  Learnability of Programming
+  url: http://stuff.alexcu.me/swin/research/Learnability of Programming.pdf
+swin_adn:
+  title: Limitations on Parallel Processing
+  url: http://stuff.alexcu.me/swin/research/Limitations on Parallel Processing.pdf
+swin_oop:
+  title: Balancing Design with Performance - An Assessment of Class Coupling in Object-Oriented Languages
+  url: http://stuff.alexcu.me/swin/research/Class Coupling and Performance Assessment.pdf
+swin_ios:
+  title: Analysis of Mobile HCI
+  url: http://stuff.alexcu.me/swin/research/Analysis of Mobile HCI.pdf
+swin_dbp:
+  title: Database Performance
+  url: http://stuff.alexcu.me/swin/research/Database Performance.pdf
+swin_adngloss:
+  title: Concepts in Concurrent Programming
+  url: http://stuff.alexcu.me/swin/notes/Concepts in Concurrent Programming.pdf
+swin_oopgloss:
+  title: Concepts in Object-Oriented Programming
+  url: http://stuff.alexcu.me/swin/notes/Concepts in Object-Oriented Programming.pdf
+swin_apsgloss:
+  title: Fundamentals of Procedural Programming
+  url: http://stuff.alexcu.me/swin/notes/Fundamentals of Procedural Programming.pdf
+
+personal_cv:
+  title: Alex Cummaudo - Curriculum Vitae
+  url: https://resume.alexcu.me/
+personal_homepage:
+  title: Alex Cummaudo - Personal Homepage
+  url:  https://alexcu.me

@@ -1,7 +1,0 @@
-section
-  img style="-webkit-flex: 1; flex: 1;" src="/images/portfolio/#{project_key}/logo.svg"
-  div style="-webkit-flex: 4; flex: 4; text-align: right; margin-left: 1em;"
-    h1 #{project.text} Demo
-    p Redirecting to #{project.text} #{has_demo ? 'demo' : 'project page'}...
-javascript:
-  setTimeout(function(){window.location.href="#{redirect_url}"}, 2000);

@@ -1,6 +1,6 @@
 [submodule "mailer"]
 	path = mailer
-	url = https://git.heroku.com/cryptic-stream-5488.git
+	url = https://git.heroku.com/alexcu-dot-me-mailer.git
 [submodule "resume"]
 	path = resume
 	url = git@github.com:alexcu/resume.git
