@@ -4,7 +4,7 @@ photo:
   src: /images/tassie.jpeg
   alt: "Wellington Range, Tasmania"
 body: |
-  I'm Alex, an AI-focused research software engineer from [Melbourne, Australia](http://wikipedia.org/en/Melbourne). I currently work under the [Applied Artificial Intelligence Institute](https://www.deakin.edu.au/a2i2) (A&sup2;I&sup2;) as an associate research fellow.
+  I'm Alex, an AI-focused research software engineer from [Melbourne, Australia](http://wikipedia.org/en/Melbourne). I currently work under the [Applied Artificial Intelligence Institute](https://www.deakin.edu.au/a2i2) (A&sup2;I&sup2;) as an [associate research fellow](/~ca).
 
   With industry experience in the education, research and commercial sectors, I have worked on writing and deploying iOS and large-scale web applications, low-level SDKs with C/C++, and machine learning data processing with Python. At A&sup2;I&sup2;, I've been actively involved in R&D projects  such as building an <a href="http://deakin.edu.au/~ca/alphanum">AI-based alphanumeric identification system</a> and end-to-end data engineering pipelines. Currently, I am pursuing a research doctorate on improving software and AI integration for production systems.
 
