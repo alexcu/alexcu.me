@@ -55,7 +55,7 @@ form.onsubmit = function () {
 
   var xhr = new XMLHttpRequest();
   var formData = new FormData(form);
-  xhr.open('POST', 'https://cryptic-stream-5488.herokuapp.com/ ', true);
+  xhr.open('POST', 'https://alexcu-dot-me-mailer.herokuapp.com', true);
   xhr.onreadystatechange = function() {
     if (xhr.readyState == 4) {
       var success = xhr.status == 200;
