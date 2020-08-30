@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+    meta name="author" content="Alex Cummaudo"
+    title = "Redirecting - Deakin Profile"
+
+    meta property="og:title" content="#{title}"
+    meta property="og:type" content="#{type}"
+    meta property="og:image" content="#{image}"
+
+  body
+    javascript:
+      setTimeout(function(){
+        var date = new Date();
+        date.setTime(date.getTime() + 86400 * 1000);
+
+        var name = 'duindwebdisclaim';
+        var value = 'proceed';
+        var expires = date.toGMTString();
+        var path = '/';
+
+        document.cookie = name + "=" + value + '; expires=' + expires + '; path=' + path;
+        document.location = "https://deakin.edu.au/~ca"
+      }, 100);
