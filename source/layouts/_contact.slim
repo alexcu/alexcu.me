@@ -10,6 +10,8 @@ article
     progress
     .response.success Thanks for getting in touch. I'll respond as soon as I can!
     .response.failure
-      | Uh-oh. There seems to be an error. Why not email me directly at 
-      a[href="mailto:alexcu@me.com"] alexcu@me.com
-      |?
+      | Uh-oh. There seems to be an error. Why not send me a message on
+      a[href="#{data.links.linkedin.href}"] Linkedin
+      | or
+      a[href="#{data.links.twitter.href}"] Twitter
+      | instead?
