@@ -1,0 +1,231 @@
+img.border-image {
+  border: 1px solid #999;
+  padding: 1px;
+}
+
+.new .content:after {
+    content: " new!";
+    color: #f00;
+    font-weight: bold;
+    font-size: 75%;
+    animation: blink 1.5s linear infinite;
+}
+
+#pubs a.more-pubs {
+  transition: opacity .25s ease-in-out;
+}
+
+#pubs ol {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+}
+#pubs ol li {
+  padding-left: 5rem;
+  margin-bottom: 1.5rem;
+}
+#pubs ol li:before {
+  display: inline-block;
+  padding: .3em;
+  border-radius: 10rem;
+  font-style: italic;
+  font-size: 70%;
+  font-weight: 700;
+  line-height: 1;
+  width: 4rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  color: #fff;
+  text-indent: 0;
+  margin-right: 0.5rem;
+  margin-left: -6rem;
+}
+#pubs ol li.conf:before {
+  background-color: #0E9D58;
+  content: "Conference";
+}
+#pubs ol li.preprint:before {
+  background-color: #4285F4;
+  content: "Preprint";
+}
+#pubs ol li.journal:before {
+  background-color: #AB2FC4;
+  content: "Journal";
+}
+#pubs ol li.series:before {
+  background-color: #F4B401;
+  color: #333;
+  content: "Series";
+}
+#pubs ol li.book:before {
+  background-color: #46BDC6;
+  content: "Book";
+}
+#pubs ol li.thesis:before {
+  background-color: #DB4437;
+  content: "Thesis";
+}
+#pubs ol li.other:before {
+  background-color: #606b70;
+  content: "Other";
+}
+
+#pubs .badge {
+  font-size: .9rem;
+  margin: 0 1ex;
+
+}
+#pubs .badge:hover {
+  text-decoration: none;
+}
+#pubs .badge i {
+  margin-right: 0.25ex;
+}
+#pubs .badge.badge-pdf {
+  background-color: #FA1500;
+  color: #fff;
+}
+#pubs .badge.badge-pdf:hover {
+  background-color: #bd2130;
+}
+#pubs .badge.badge-talk {
+  background-color: #33c3ba;
+  color: #fff;
+}
+#pubs .badge.badge-talk:hover {
+  background-color: #3A9B9D;
+}
+#pubs .badge.badge-demo {
+  background-color: #FFD479;
+  color: #333;
+}
+#pubs .badge.badge-demo:hover {
+  background-color: #c79a39;
+}
+#pubs .badge.badge-github {
+  background-color: #414A93;
+  color: #fff;
+}
+#pubs .badge.badge-github:hover {
+  background-color: #011993;
+}
+
+
+/* @keyframes blink {
+    0% { color: #f00; }
+    50% { color: #ff0; }
+    100% { color: #f00; }
+} */
+
+
+
+/* .pub-widget ol { padding-left: 0; }
+
+.pub-widget ol li {
+    list-style: none;
+    margin: 1em auto;
+}
+
+.pub-widget li.highlight {
+    background-color: #ff0;
+    transition: background-color 1s ease 0.25s;
+}
+
+.pub-widget ol i.award { color: #f8c91f; }
+.pub-widget ol .pub-no { width: 40px; float: left; margin-top: 0.3rem; border-radius: 0.25rem; }
+.pub-widget ol .pub-no a { font-weight: bold; color: #fff; }
+.pub-widget ol .pub-item { margin-left: 50px; }
+.pub-widget ol .author.me { font-weight: bold; }
+.pub-widget ol .book-title { font-style: italic; }
+.pub-widget ol .j { background-color: #c32b72; } /* Journal */
+.pub-widget ol .c { background-color: #388ec8; } /* Conference */
+.pub-widget ol .b { background-color: #f8c91f; } /* Book and Thesis */
+.pub-widget ol .s { background-color: #33c3ba; } /* Series, e.g. LNCS */
+.pub-widget ol .m { background-color: #606b70; } /* Others */
+
+.pub-widget ol .pdf-link {
+    background-color: #B30C01;
+    color: #fff;
+}
+
+.pub-widget ol .oa-link {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.pub-widget ol .pill {
+    display: inline-block;
+    padding: 0.2rem 0.3rem;
+    font-size: 80%;
+    white-space: nowrap;
+    border-radius: 0.35rem;
+    margin-right: 0.25rem;
+} */
+
+h2 {
+  font-size: 1.25em;
+}
+
+hr {
+  margin: 2em 0;
+}
+
+#contact a.btn {
+  margin-bottom: .5rem;
+}
+#contact a.btn i {
+  font-size: 1.1rem;
+  margin-right: 0.25rem;
+}
+
+:root{
+  --btn-email-color: rgba(41,216,30);
+  --btn-phone-color: rgba(47,205,253);
+  --btn-linkedin-color: rgba(14,118,168);
+  --btn-googlescholar-color: rgba(66,133,244);
+  --btn-orcid-color: rgba(166,206,57);
+  --btn-arxiv-color: rgba(179,27,27);
+  --btn-dblp-color: rgba(253,163,0);
+  --btn-researchgate-color: rgba(43,208,175);
+  --btn-ieee-color: #17445A;
+  --btn-acmdl-color: #333;
+  --btn-elsevier-color: rgba(251,130,2);
+  --btn-university-color: rgba(23,131,113);
+}
+
+.btn-email { color: #fff; background-color: var(--btn-email-color); border-color: var(--btn-email-color); }
+.btn-email:hover { color: var(--btn-email-color); background-color: transparent; background-image: none; border-color: var(--btn-email-color); }
+
+.btn-phone { color: #fff; background-color: var(--btn-phone-color); border-color: var(--btn-phone-color); }
+.btn-phone:hover { color: var(--btn-phone-color); background-color: transparent; background-image: none; border-color: var(--btn-phone-color); }
+
+.btn-linkedin { color: #fff; background-color: var(--btn-linkedin-color); border-color: var(--btn-linkedin-color); }
+.btn-linkedin:hover { color: var(--btn-linkedin-color); background-color: transparent; background-image: none; border-color: var(--btn-linkedin-color); }
+
+.btn-googlescholar { color: #fff; background-color: var(--btn-googlescholar-color); border-color: var(--btn-googlescholar-color); }
+.btn-googlescholar:hover { color: var(--btn-googlescholar-color); background-color: transparent; background-image: none; border-color: var(--btn-googlescholar-color); }
+
+.btn-orcid { color: #fff; background-color: var(--btn-orcid-color); border-color: var(--btn-orcid-color); }
+.btn-orcid:hover { color: var(--btn-orcid-color); background-color: transparent; background-image: none; border-color: var(--btn-orcid-color); }
+
+.btn-arxiv { color: #fff; background-color: var(--btn-arxiv-color); border-color: var(--btn-arxiv-color); }
+.btn-arxiv:hover { color: var(--btn-arxiv-color); background-color: transparent; background-image: none; border-color: var(--btn-arxiv-color); }
+
+.btn-dblp { color: #fff; background-color: var(--btn-dblp-color); border-color: var(--btn-dblp-color); }
+.btn-dblp:hover { color: var(--btn-dblp-color); background-color: transparent; background-image: none; border-color: var(--btn-dblp-color); }
+
+.btn-researchgate { color: #fff; background-color: var(--btn-researchgate-color); border-color: var(--btn-researchgate-color); }
+.btn-researchgate:hover { color: var(--btn-researchgate-color); background-color: transparent; background-image: none; border-color: var(--btn-researchgate-color); }
+
+.btn-ieee { color: #fff; background-color: var(--btn-ieee-color); border-color: var(--btn-ieee-color); }
+.btn-ieee:hover { color: var(--btn-ieee-color); background-color: transparent; background-image: none; border-color: var(--btn-ieee-color); }
+
+.btn-acmdl { color: #fff; background-color: var(--btn-acmdl-color); border-color: var(--btn-acmdl-color); }
+.btn-acmdl:hover { color: var(--btn-acmdl-color); background-color: transparent; background-image: none; border-color: var(--btn-acmdl-color); }
+
+.btn-elsevier { color: #fff; background-color: var(--btn-elsevier-color); border-color: var(--btn-elsevier-color); }
+.btn-elsevier:hover { color: var(--btn-elsevier-color); background-color: transparent; background-image: none; border-color: var(--btn-elsevier-color); }
+
+.btn-university { color: #fff; background-color: var(--btn-university-color); border-color: var(--btn-university-color); }
+.btn-university:hover { color: var(--btn-university-color); background-color: transparent; background-image: none; border-color: var(--btn-university-color); }

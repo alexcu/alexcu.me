@@ -17,7 +17,7 @@ require "slim"
 #
 # With no layout
 page "/goto/*", :layout => false
-page "~/ca", :layout => false
+page "/ca/index.html", :layout => false
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
@@ -39,7 +39,7 @@ data.opengraph.each do | key, project |
     }
 end
 
-proxy "/~ca/index.html", "/templates/deakin-redirect.html",
+proxy "/ca/index.html", "/templates/deakin-redirect.html",
   locals: {
     title:  data.opengraph.deakin_home.title,
     type:   "website",

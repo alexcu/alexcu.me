@@ -1,0 +1,40 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+@font-face {
+  font-family: Utopia;
+  font-weight: normal;
+  font-style: normal;
+  src: url("fonts/utopia/Utopia-Regular.woff") format("woff");
+  src: url("fonts/utopia/Utopia-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Utopia;
+  font-weight: bold;
+  font-style: normal;
+  src: url("fonts/utopia/Utopia-Bold.woff") format("woff");
+  src: url("fonts/utopia/Utopia-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: Utopia;
+  font-weight: normal;
+  font-style: italic;
+  src: url("fonts/utopia/Utopia-Italic.woff") format("woff");
+  src: url("fonts/utopia/Utopia-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: Utopia;
+  font-weight: bold;
+  font-style: italic;
+  src: url("fonts/utopia/Utopia-BoldItalic.woff") format("woff");
+  src: url("fonts/utopia/Utopia-BoldItalic.ttf") format("truetype");
+}
+body {
+  margin: 3em auto;
+  font-family: Utopia, Palatino, Cambria, Serif;
+  line-height: 1.5em;
+}
+a, h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+footer {
+  padding-bottom: 1em;
+}
