@@ -1,3 +1,6 @@
+phd_fse2020_demo:
+  title: "Threshy: Supporting Safe Usage of Intelligent Web Services"
+  url: https://arxiv.org/pdf/2008.08252.pdf
 phd_fse2020:
   title: Beware the evolving ‘intelligent‘ web service! An integration architecture tactic to guard AI-first components
   url: https://arxiv.org/pdf/2005.13186.pdf
