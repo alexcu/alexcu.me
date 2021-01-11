@@ -18,7 +18,7 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 gem "middleman-autoprefixer", "~> 2.4.3"
 
 # Middleman redcarpet
-gem "redcarpet", "~> 3.2.3"
+gem "redcarpet", "~> 3.5.1"
 
 # Add Bower to Middleman
 gem "middleman-bower"
