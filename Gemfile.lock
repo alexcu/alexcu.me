@@ -105,7 +105,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    redcarpet (3.2.3)
+    redcarpet (3.5.1)
     sass (3.4.25)
     slim (3.0.9)
       temple (>= 0.7.6, < 0.9)
@@ -142,7 +142,7 @@ DEPENDENCIES
   middleman-autoprefixer (~> 2.4.3)
   middleman-bower
   middleman-livereload (~> 3.1.0)
-  redcarpet (~> 3.2.3)
+  redcarpet (~> 3.5.1)
   slim (>= 2.0)
   tzinfo-data
   wdm (~> 0.1.0)
