@@ -1,19 +1,22 @@
-phd_fse2020_demo:
+tse2020:
+  title: "Requirements of API Documentation: A Case Study into Computer Vision Services"
+  url: https://arxiv.org/pdf/2012.13728.pdf
+fse2020_demo:
   title: "Threshy: Supporting Safe Usage of Intelligent Web Services"
   url: https://arxiv.org/pdf/2008.08252.pdf
-phd_fse2020:
+fse2020:
   title: Beware the evolving ‘intelligent‘ web service! An integration architecture tactic to guard AI-first components
   url: https://arxiv.org/pdf/2005.13186.pdf
-phd_icse2020:
+icse2020:
   title: Interpreting Cloud Computer Vision Pain-Points - A Mining Study of Stack Overflow
   url: https://arxiv.org/pdf/2001.10130.pdf
 icsme2019:
   title: Losing Confidence in Quality - Unspoken Evolution of Computer Vision Services
   url: https://arxiv.org/pdf/1906.07328.pdf
-phd_icsme2019:
+icsme2019:
   title: Losing Confidence in Quality - Unspoken Evolution of Computer Vision Services
   url: https://arxiv.org/pdf/1906.07328.pdf
-phd_esem2019:
+esem2019:
   title: What should I document? A preliminary systematic mapping study into API documentation knowledge
   url: https://arxiv.org/pdf/1907.13260.pdf
 
@@ -67,3 +70,23 @@ personal_homepage:
 deakin_home:
   title: Alex Cummaudo - Deakin Profile
   url: https://alexcu.me/~ca
+
+# Deprecated PhD prefix
+phd_fse2020_demo:
+  title: "Threshy: Supporting Safe Usage of Intelligent Web Services"
+  url: https://arxiv.org/pdf/2008.08252.pdf
+phd_fse2020:
+  title: Beware the evolving ‘intelligent‘ web service! An integration architecture tactic to guard AI-first components
+  url: https://arxiv.org/pdf/2005.13186.pdf
+phd_icse2020:
+  title: Interpreting Cloud Computer Vision Pain-Points - A Mining Study of Stack Overflow
+  url: https://arxiv.org/pdf/2001.10130.pdf
+phd_icsme2019:
+  title: Losing Confidence in Quality - Unspoken Evolution of Computer Vision Services
+  url: https://arxiv.org/pdf/1906.07328.pdf
+phd_icsme2019:
+  title: Losing Confidence in Quality - Unspoken Evolution of Computer Vision Services
+  url: https://arxiv.org/pdf/1906.07328.pdf
+phd_esem2019:
+  title: What should I document? A preliminary systematic mapping study into API documentation knowledge
+  url: https://arxiv.org/pdf/1907.13260.pdf
